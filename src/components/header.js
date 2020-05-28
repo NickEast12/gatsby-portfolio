@@ -46,6 +46,7 @@ const MenuTitle = styled.div`
   }
 `
 const Menu = styled.div`
+display: ${({ open }) => (open ? "block" : "none")};
   transition: all 0.9s ease;
   @keyframes animationFrames {
     0% {

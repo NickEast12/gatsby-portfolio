@@ -16,7 +16,7 @@ const projects = () => {
                 backgroundColor: "darkgreen",
               }}
             >
-              <h1>React Parallax Tilt 👀</h1>
+              <h1>React Parallax Tilt </h1>
             </div>
           </Tilt>
         </div>
