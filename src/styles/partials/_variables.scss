@@ -1,0 +1,28 @@
+$mainColour: #1bbc9b;
+
+@mixin mainButton {
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  border-radius: 2.5px;
+  background: none;
+  padding: 0.75rem 0;
+  cursor: pointer;
+}
+@mixin outlineButton {
+  border: solid 2px $mainColour;
+  color: $mainColour;
+  background: none;
+}
+
+@mixin fillButton {
+  background: $mainColour;
+  border: none;
+  color: #fff;
+}
+
+@mixin p {
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: -0.1px;
+}

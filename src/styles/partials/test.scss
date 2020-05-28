@@ -1,0 +1,77 @@
+&__title {
+  padding-top: 9rem;
+  z-index: -2;
+  position: relative;
+  width: 85%;
+  margin: 0 auto;
+  &__content {
+    line-height: 40px;
+    height: 150px;
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+      height: 2.5rem;
+      padding: 0 2rem;
+      &::after {
+        content: "]";
+        position: absolute;
+        font-size: 2rem;
+        right: 1rem;
+        font-family: Lato;
+        color: $mainColour;
+      }
+      &::before {
+        content: "[";
+        position: absolute;
+        font-size: 2rem;
+        left: 1rem;
+        font-family: Lato;
+        color: $mainColour;
+      }
+      &::before,
+      &::after {
+        animation-name: opacity;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-name: opacity;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+      p {
+        font-size: 1.25rem;
+      }
+      ul {
+        height: 10rem;
+        animation-name: change;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-name: change;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        list-style: none;
+        overflow: hidden;
+        li {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+  &__lower {
+    width: 85%;
+    margin: -6rem auto 0 auto;
+    p {
+      font-size: 1rem;
+      font-weight: 200;
+    }
+    &__btn {
+      margin-top: 2rem;
+      width: 75%;
+      button {
+        width: 100%;
+        background: green;
+      }
+    }
+  }
+}

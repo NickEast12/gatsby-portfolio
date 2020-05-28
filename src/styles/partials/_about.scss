@@ -1,0 +1,38 @@
+.about__wrapper {
+  margin-top: 8rem;
+  height: 100vh;
+  padding: 1rem 0;
+  &__inner {
+    width: 80%;
+    margin: 0 auto;
+    &__left {
+      padding-top: 5rem;
+      h2 {
+        font-size: 2rem;
+        position: relative;
+        margin-bottom: 1.5rem;
+        padding-left: 0.15rem;
+        &::after,
+        &::before {
+          position: absolute;
+          font-size: 2rem;
+          color: $mainColour;
+          animation: pulse 2s ease 0s infinite;
+        }
+        &::after {
+          content: "]";
+          right: 5.85rem;
+        }
+        &::before {
+          content: "[";
+          left: -0.75rem;
+        }
+      }
+      p {
+        @include p;
+        margin: 0.65rem 0;
+        font-size: 1.01rem;
+      }
+    }
+  }
+}

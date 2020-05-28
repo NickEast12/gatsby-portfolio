@@ -1,0 +1,74 @@
+.main__wrapper {
+  width: 100%;
+  position: relative;
+  &__background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -2;
+  }
+  &__content {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 6rem;
+    position: relative;
+    &__title {
+      h1 {
+        font-size: 2rem;
+        position: relative;
+        &::before {
+          content: "[";
+          position: absolute;
+          font-size: 2rem;
+          color: $mainColour;
+          left: -1rem;
+        }
+        &::after {
+          content: "]";
+          position: absolute;
+          font-size: 2rem;
+          color: $mainColour;
+          right: 4.5rem;
+        }
+        &::after,
+        &::before {
+          animation: pulse 2s ease 0s infinite;
+        }
+      }
+      p {
+        margin: 1.75rem 0;
+        font-weight: 200;
+      }
+    }
+    &__btn {
+      margin-top: 1.75rem;
+      width: 75%;
+      button {
+        width: 100%;
+        display: block;
+        margin: 1rem 0;
+        @include mainButton;
+        &:nth-child(1) {
+          @include outlineButton;
+        }
+        &:nth-child(2) {
+          @include fillButton;
+        }
+      }
+    }
+    &__meta {
+      position: absolute;
+      bottom: -5rem;
+      p {
+        font-weight: 200;
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+        span {
+          color: $mainColour;
+          font-weight: 400;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
