@@ -182,7 +182,7 @@ const Header = ({ siteTitle }) => {
                   }}
                 >
                   <h2>Home</h2>
-                  <p>lorem lorem lorem112 lorem lorem lormem</p>
+                  <p>lorem lorem lorem112 lorem </p>
                 </div>
               </AniLink>
               <AniLink fade to="/about-me">
@@ -194,7 +194,7 @@ const Header = ({ siteTitle }) => {
                   }}
                 >
                   <h2>About Me</h2>
-                  <p>lorem lorem lorem112 lorem lorem lormem</p>
+                  <p>lorem lorem lorem112 lorem </p>
                 </div>
               </AniLink>
             </li>
@@ -207,7 +207,7 @@ const Header = ({ siteTitle }) => {
                   }}
                 >
                   <h2>Projects</h2>
-                  <p>lorem lorem lorem112 lorem lorem lormem</p>
+                  <p>lorem lorem lorem112 lorem </p>
                 </div>
               </AniLink>
             </li>
@@ -215,7 +215,7 @@ const Header = ({ siteTitle }) => {
               <AniLink>
                 <div className="menu__items">
                   <h2>Refrences</h2>
-                  <p>lorem lorem lorem112 lorem lorem lormem</p>
+                  <p>lorem lorem lorem112 lorem </p>
                 </div>
               </AniLink>
             </li>
@@ -223,7 +223,7 @@ const Header = ({ siteTitle }) => {
               <AniLink>
                 <div className="menu__items">
                   <h2>Contact</h2>
-                  <p>lorem lorem lorem112 lorem lorem lormem</p>
+                  <p>lorem lorem lorem112 lorem </p>
                 </div>
               </AniLink>
             </li>
