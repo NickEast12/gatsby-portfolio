@@ -173,41 +173,59 @@ const Header = ({ siteTitle }) => {
               <div></div>
             </div>
             <li>
-              <div
-                className="menu__items"
-                open={open}
-                onClick={() => {
-                  scrollTo("#nameTag")
-                  setOpen(!open)
-                }}
-              >
-                <h2>About Me</h2>
-                <p>lorem lorem lorem112 lorem lorem lormem</p>
-              </div>
+              <AniLink fade to="/">
+                <div
+                  className="menu__items"
+                  open={open}
+                  onClick={() => {
+                    setOpen(!open)
+                  }}
+                >
+                  <h2>Home</h2>
+                  <p>lorem lorem lorem112 lorem lorem lormem</p>
+                </div>
+              </AniLink>
+              <AniLink fade to="/about-me">
+                <div
+                  className="menu__items"
+                  open={open}
+                  onClick={() => {
+                    setOpen(!open)
+                  }}
+                >
+                  <h2>About Me</h2>
+                  <p>lorem lorem lorem112 lorem lorem lormem</p>
+                </div>
+              </AniLink>
             </li>
             <li>
-              <div
-                className="menu__items"
-                onClick={() => {
-                  scrollTo("#projectTag")
-                  setOpen(!open)
-                }}
-              >
-                <h2>Projects</h2>
-                <p>lorem lorem lorem112 lorem lorem lormem</p>
-              </div>
+              <AniLink fade to="/projects">
+                <div
+                  className="menu__items"
+                  onClick={() => {
+                    setOpen(!open)
+                  }}
+                >
+                  <h2>Projects</h2>
+                  <p>lorem lorem lorem112 lorem lorem lormem</p>
+                </div>
+              </AniLink>
             </li>
             <li>
-              <div className="menu__items">
-                <h2>Refrences</h2>
-                <p>lorem lorem lorem112 lorem lorem lormem</p>
-              </div>
+              <AniLink>
+                <div className="menu__items">
+                  <h2>Refrences</h2>
+                  <p>lorem lorem lorem112 lorem lorem lormem</p>
+                </div>
+              </AniLink>
             </li>
             <li>
-              <div className="menu__items">
-                <h2>Contact</h2>
-                <p>lorem lorem lorem112 lorem lorem lormem</p>
-              </div>
+              <AniLink>
+                <div className="menu__items">
+                  <h2>Contact</h2>
+                  <p>lorem lorem lorem112 lorem lorem lormem</p>
+                </div>
+              </AniLink>
             </li>
           </ul>
         </div>

@@ -7,10 +7,6 @@ import SEO from "../components/seo"
 import Twitter from "../assets/twitter.svg"
 import Particles from "react-particles-js"
 
-//* import page componets
-import About from "../components/sections/about"
-import Projects from "../components/sections/projects"
-
 const IndexPage = () => (
   <Layout>
     <SEO title="Nick East Web Design" />
@@ -161,8 +157,6 @@ const IndexPage = () => (
           </p>
         </div>
       </div>
-      <About />
-      <Projects />
     </div>
   </Layout>
 )

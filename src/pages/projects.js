@@ -4,11 +4,11 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Particles from "react-particles-js"
 
-import About from "../components/sections/about"
+import Projects from "../components/sections/projects"
 
-const AboutPage = () => (
+const ProjectsPage = () => (
   <Layout>
-    <SEO title="About Me" />
+    <SEO title="Projects" />
     <div className="main__wrapper">
       <Particles
         className="main__wrapper__background"
@@ -130,9 +130,9 @@ const AboutPage = () => (
           retina_detect: true,
         }}
       />
-      <About />
+      <Projects />
     </div>
   </Layout>
 )
 
-export default AboutPage
+export default ProjectsPage
