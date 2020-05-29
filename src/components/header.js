@@ -168,9 +168,9 @@ const Header = ({ siteTitle }) => {
         <div className="main__header__wrapper__menu__inner">
           <ul>
             <div className="traffic__lights">
-              <div></div>
-              <div></div>
-              <div></div>
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
             <li>
               <AniLink fade to="/">
