@@ -173,7 +173,7 @@ const Header = ({ siteTitle }) => {
               <span></span>
             </div>
             <li>
-              <AniLink fade to="/">
+              <AniLink swipe direction="down" to="/">
                 <div
                   className="menu__items"
                   open={open}
@@ -185,7 +185,7 @@ const Header = ({ siteTitle }) => {
                   <p>lorem lorem lorem112 lorem </p>
                 </div>
               </AniLink>
-              <AniLink fade to="/about-me">
+              <AniLink swipe direction="down" to="/about-me">
                 <div
                   className="menu__items"
                   open={open}

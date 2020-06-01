@@ -9,13 +9,13 @@ import Projects from "../components/sections/projects"
 const ProjectsPage = () => (
   <Layout>
     <SEO title="Projects" />
-    <div className="main__wrapper">
+    <div className="projects__container">
       <Particles
-        className="main__wrapper__background"
+        className="projects__container__background"
         params={{
           particles: {
             number: {
-              value: 160,
+              value: 250,
               density: {
                 enable: true,
                 value_area: 400,
@@ -89,14 +89,14 @@ const ProjectsPage = () => (
             },
           },
           interactivity: {
-            detect_on: "canvas",
+            detect_on: "window",
             events: {
               onhover: {
-                enable: true,
+                enable: false,
                 mode: "grab",
               },
               onclick: {
-                enable: true,
+                enable: false,
                 mode: "push",
               },
               resize: true,

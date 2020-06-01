@@ -15,21 +15,14 @@ const AboutPage = () => (
         params={{
           particles: {
             number: {
-              value: 160,
+              value: 250,
               density: {
                 enable: true,
                 value_area: 400,
               },
             },
             color: {
-              value: [
-                "#F83B3A",
-                "#EBDF64",
-                "#62DE6D",
-                "#DB55DD",
-                "#5353F1",
-                "#42E9F4",
-              ],
+              value: ["#ffffff"],
             },
             shape: {
               type: "circle",
@@ -89,14 +82,14 @@ const AboutPage = () => (
             },
           },
           interactivity: {
-            detect_on: "canvas",
+            detect_on: "window",
             events: {
               onhover: {
-                enable: true,
+                enable: false,
                 mode: "grab",
               },
               onclick: {
-                enable: true,
+                enable: false,
                 mode: "push",
               },
               resize: true,

@@ -5,6 +5,9 @@
   // -webkit-font-smoothing: antialiased;
 }
 
+.tl-edges {
+  overflow-x: unset !important;
+}
 body {
   background: #000;
   color: white;
