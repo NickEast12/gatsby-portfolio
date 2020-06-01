@@ -1,11 +1,8 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import { useState } from "react"
 import styled from "styled-components"
-import TransitionLink from "gatsby-plugin-transition-link"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import scrollTo from "gatsby-plugin-smoothscroll"
 
 const StyledBurger = styled.div`
   width: 100%;

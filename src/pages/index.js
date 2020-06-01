@@ -1,10 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
 import "../styles/main.scss"
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
-import Twitter from "../assets/twitter.svg"
 import Particles from "react-particles-js"
 
 const IndexPage = () => (

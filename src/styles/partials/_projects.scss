@@ -43,15 +43,12 @@
       margin-top: 2.5rem;
       &__tilt {
         background: $mainColour;
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
         border: solid $mainColour 4px;
-        // border-radius: 10px;
-        transform-style: preserve-3d;
 
         &__inner {
           width: 100%;
           height: 12rem;
-          // border-radius: 10px;
           color: #000;
           position: relative;
           &--left {
@@ -61,7 +58,6 @@
             right: 1rem;
           }
           h1 {
-            transform: translateZ(60px);
             position: absolute;
             bottom: -1rem;
             color: #fff;

@@ -18,11 +18,7 @@ const projects = () => {
         <h2>My Projects</h2>
         <div className="projects__wrapper__inner__cards">
           <Tilt
-            tiltAngleXInitial={0}
-            tiltAngleYInitial={0}
-            glareEnable={true}
-            reset={false}
-            perspective={500}
+            tiltReverse={true}
             className="projects__wrapper__inner__cards__tilt "
           >
             <Link to="/">
@@ -34,9 +30,7 @@ const projects = () => {
             </Link>
           </Tilt>
           <Tilt
-            glareEnable={true}
-            reset={false}
-            perspective={500}
+            tiltReverse={true}
             className="projects__wrapper__inner__cards__tilt "
           >
             <Link to="/">
@@ -48,9 +42,7 @@ const projects = () => {
             </Link>
           </Tilt>
           <Tilt
-            glareEnable={true}
-            reset={false}
-            perspective={500}
+            tiltReverse={true}
             className="projects__wrapper__inner__cards__tilt "
           >
             <Link to="/">
@@ -62,9 +54,7 @@ const projects = () => {
             </Link>
           </Tilt>
           <Tilt
-            glareEnable={true}
-            reset={false}
-            perspective={500}
+            tiltReverse={true}
             className="projects__wrapper__inner__cards__tilt "
           >
             <Link to="/">
