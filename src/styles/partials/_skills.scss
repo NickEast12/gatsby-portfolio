@@ -1,0 +1,33 @@
+.skills__wrapper {
+  height: 100%;
+  padding: 1rem 0;
+  &__inner {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 5rem;
+    h2 {
+      font-size: 2rem;
+      position: relative;
+      margin-bottom: 1.5rem;
+      padding-left: 0.15rem;
+      span {
+        color: $mainColour;
+      }
+      &::after,
+      &::before {
+        position: absolute;
+        font-size: 2rem;
+        color: $mainColour;
+        animation: pulse 2s ease 0s infinite;
+      }
+      &::after {
+        content: "]";
+        right: 4.75rem;
+      }
+      &::before {
+        content: "[";
+        left: -0.75rem;
+      }
+    }
+  }
+}

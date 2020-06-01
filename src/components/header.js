@@ -170,7 +170,7 @@ const Header = ({ siteTitle }) => {
               <span></span>
             </div>
             <li>
-              <AniLink swipe direction="down" to="/">
+              <AniLink swipe direction="up" to="/">
                 <div
                   className="menu__items"
                   open={open}
@@ -182,7 +182,7 @@ const Header = ({ siteTitle }) => {
                   <p>lorem lorem lorem112 lorem </p>
                 </div>
               </AniLink>
-              <AniLink swipe direction="down" to="/about-me">
+              <AniLink swipe direction="up" to="/about-me">
                 <div
                   className="menu__items"
                   open={open}
@@ -196,7 +196,7 @@ const Header = ({ siteTitle }) => {
               </AniLink>
             </li>
             <li>
-              <AniLink fade to="/projects">
+              <AniLink swipe direction="up" to="/projects">
                 <div
                   className="menu__items"
                   onClick={() => {
@@ -209,9 +209,9 @@ const Header = ({ siteTitle }) => {
               </AniLink>
             </li>
             <li>
-              <AniLink>
+              <AniLink swipe direction="up" to="/skills">
                 <div className="menu__items">
-                  <h2>Refrences</h2>
+                  <h2>Skills</h2>
                   <p>lorem lorem lorem112 lorem </p>
                 </div>
               </AniLink>

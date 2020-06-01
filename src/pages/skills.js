@@ -127,7 +127,17 @@ const SkillsPage = () => (
           retina_detect: true,
         }}
       />
-      <div className="main__wrapper__content"></div>
+      <div className="skills__wrapper">
+        <div className="skills__wrapper__inner">
+          <h2>
+            Skills <span>&amp;</span> Experience
+          </h2>
+          <div className="skills__wrapper__inner__right">
+            <p>lorem10</p>
+          </div>
+          <div className="skills__wrapper__inner__left"></div>
+        </div>
+      </div>
     </div>
   </Layout>
 )

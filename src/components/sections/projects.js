@@ -17,8 +17,7 @@ const projects = () => {
       <div className="projects__wrapper__inner">
         <h2>My Projects</h2>
         <div className="projects__wrapper__inner__cards">
-          <Tilt
-            tiltReverse={true}
+          <div
             className="projects__wrapper__inner__cards__tilt "
           >
             <Link to="/">
@@ -28,9 +27,8 @@ const projects = () => {
                 </h1>
               </Cards>
             </Link>
-          </Tilt>
-          <Tilt
-            tiltReverse={true}
+          </div>
+          <div
             className="projects__wrapper__inner__cards__tilt "
           >
             <Link to="/">
@@ -40,21 +38,19 @@ const projects = () => {
                 </h1>
               </Cards>
             </Link>
-          </Tilt>
-          <Tilt
-            tiltReverse={true}
+          </div>
+          <div
             className="projects__wrapper__inner__cards__tilt "
           >
-            <Link to="/">
+            <div to="/">
               <Cards className="projects__wrapper__inner__cards__tilt__inner">
                 <h1 className="projects__wrapper__inner__cards__tilt__inner--left">
                   LashBase
                 </h1>
               </Cards>
-            </Link>
-          </Tilt>
-          <Tilt
-            tiltReverse={true}
+            </div>
+          </div>
+          <div
             className="projects__wrapper__inner__cards__tilt "
           >
             <Link to="/">
@@ -64,7 +60,7 @@ const projects = () => {
                 </h1>
               </Cards>
             </Link>
-          </Tilt>
+          </div>
         </div>
       </div>
     </div>
