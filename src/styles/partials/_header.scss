@@ -10,7 +10,7 @@
   &__ham {
     text-align: left;
     margin: 1.25rem auto 0 2.5rem;
-    z-index: 100;
+    z-index: 101;
   }
   &__menu {
     position: absolute;
@@ -19,6 +19,7 @@
     right: 0.75rem;
     top: 0.5rem;
     border-radius: 10px;
+    z-index: 100;
     &__inner {
       clip-path: circle(100% at center);
       width: 100%;

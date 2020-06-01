@@ -185,7 +185,7 @@ const Header = ({ siteTitle }) => {
                   <p>lorem lorem lorem112 lorem </p>
                 </div>
               </AniLink>
-              <AniLink swipe direction="down" to="/about-me">
+              <AniLink swipe direction="down" to="/about-me" duration={200}>
                 <div
                   className="menu__items"
                   open={open}
