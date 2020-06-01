@@ -36,7 +36,7 @@ const projects = () => {
             <Link to="/">
               <Cards className="projects__wrapper__inner__cards__tilt__inner">
                 <h1 className="projects__wrapper__inner__cards__tilt__inner--right">
-                  The Web Doctor
+                  Vine Street Solutions
                 </h1>
               </Cards>
             </Link>
@@ -48,7 +48,7 @@ const projects = () => {
             <Link to="/">
               <Cards className="projects__wrapper__inner__cards__tilt__inner">
                 <h1 className="projects__wrapper__inner__cards__tilt__inner--left">
-                  The Web Doctor
+                  LashBase
                 </h1>
               </Cards>
             </Link>
@@ -60,7 +60,7 @@ const projects = () => {
             <Link to="/">
               <Cards className="projects__wrapper__inner__cards__tilt__inner">
                 <h1 className="projects__wrapper__inner__cards__tilt__inner--right">
-                  The Web Doctor
+                  Obliterate
                 </h1>
               </Cards>
             </Link>
