@@ -217,7 +217,7 @@ const Header = ({ siteTitle }) => {
               </AniLink>
             </li>
             <li>
-              <AniLink>
+              <AniLink swipe direction="down" to="/contact">
                 <div className="menu__items">
                   <h2>Contact</h2>
                   <p>lorem lorem lorem112 lorem </p>

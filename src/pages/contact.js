@@ -3,14 +3,12 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Particles from "react-particles-js"
 
-import Projects from "../components/sections/projects"
-
-const ProjectsPage = () => (
+const SkillsPage = () => (
   <Layout>
-    <SEO title="Projects" />
-    <div className="projects__container">
+    <SEO title="Skills & Experience" />
+    <div className="main__wrapper">
       <Particles
-        className="projects__container__background"
+        className="main__wrapper__background"
         params={{
           particles: {
             number: {
@@ -129,11 +127,29 @@ const ProjectsPage = () => (
           retina_detect: true,
         }}
       />
-       
-
-      <Projects />
+      <div className="contact__wrapper">
+        <div className="contact__wrapper__inner">
+          <h2>Contact Me!</h2>
+          <p>
+            I am interested in freelance opportunities – especially ambitious or
+            large projects. However, if you have other request or question,
+            don’t hesitate to contact me using below form either.
+          </p>
+          <form className="contact__wrapper__inner__form">
+            <div className="contact__wrapper__inner__form__section">
+              <input type="text" placeholder="Name"></input>
+              <input type="text" placeholder="Email"></input>
+            </div>
+            <input type="text" placeholder="Subject"></input>
+            <textarea placeholder="Message"></textarea>
+            <div className="contact__wrapper__inner__form__btn">
+              <button>Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </Layout>
 )
 
-export default ProjectsPage
+export default SkillsPage

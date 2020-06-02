@@ -1,25 +1,13 @@
 .skills__wrapper {
   height: 100%;
-  padding: 1rem 0;
+  padding: 2.5rem 0;
   &__inner {
     width: 80%;
     margin: 0 auto;
     padding-top: 5rem;
     h2 {
       font-size: 2rem;
-      position: relative;
-      margin-bottom: 1.5rem;
-      padding-left: 0.15rem;
-      span {
-        color: $mainColour;
-      }
-      &::after,
-      &::before {
-        position: absolute;
-        font-size: 2rem;
-        color: $mainColour;
-        animation: pulse 2s ease 0s infinite;
-      }
+      @include titleFeature;
       &::after {
         content: "]";
         right: 4.75rem;
@@ -27,6 +15,56 @@
       &::before {
         content: "[";
         left: -0.75rem;
+      }
+    }
+    &__right {
+      p {
+        margin-bottom: 0.75rem;
+        font-weight: 300;
+        line-height: 20px;
+        letter-spacing: -0.1px;
+        margin: 0.65rem 0;
+        font-size: 1.01rem;
+        span {
+          color: $mainColour;
+          font-weight: 700;
+          text-transform: capitalize;
+        }
+      }
+    }
+    &__left {
+      padding-top: 1.5rem;
+      h3 {
+        font-size: 1.35rem;
+        @include titleFeature;
+        &::after,
+        &::before {
+          font-size: 1.35rem;
+        }
+        &::after {
+          content: "]";
+          right: 4.2rem;
+        }
+        &::before {
+          content: "[";
+          left: -0.45rem;
+        }
+      }
+      &__tilt {
+        width: 5rem;
+        text-align: center;
+        padding: 0.75rem 0;
+        background: linear-gradient(120deg, #13866e, $mainColour);
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        li {
+          position: relative;
+          margin-bottom: 0.5rem;
+        }
       }
     }
   }

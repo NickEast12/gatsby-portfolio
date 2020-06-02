@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Particles from "react-particles-js"
+import Tilt from "react-parallax-tilt"
 
 const SkillsPage = () => (
   <Layout>
@@ -133,9 +134,221 @@ const SkillsPage = () => (
             Skills <span>&amp;</span> Experience
           </h2>
           <div className="skills__wrapper__inner__right">
-            <p>lorem10</p>
+            <p>
+              The main area of my expertise is front end development (client
+              side of the web).
+            </p>
+            <p>
+              HTML, CSS, JS (TypeScript), building small and medium web apps
+              with Angular 2+, custom plugins, features, animations, and coding
+              interactive layouts.
+            </p>
+            <p>
+              I have also full-stack developer experience with open source CMS
+              like (WordPress, Drupal, Magento, Keystone.js and other)
+            </p>
+            <p>
+              Visit my <span>Linkedin</span> or <span>Github</span> or just get
+              in <span> contact</span> with me!
+            </p>
           </div>
-          <div className="skills__wrapper__inner__left"></div>
+          <div className="skills__wrapper__inner__left">
+            <h3>Web Technologies</h3>
+            <ul>
+              <li>
+                <Tilt
+                  className="skills__wrapper__inner__left__tilt"
+                  tiltReverse={true}
+                  glareEnable={true}
+                  glareMaxOpacity={0.8}
+                  reset={false}
+                  tiltAngleXInitial={0}
+                  tiltAngleYInitial={0}
+                  onEnter={e => {
+                    console.log(e)
+                  }}
+                >
+                  <p>HTML5</p>
+                </Tilt>
+              </li>
+              <li>
+                <Tilt
+                  className="skills__wrapper__inner__left__tilt"
+                  tiltReverse={true}
+                  glareEnable={true}
+                  glareMaxOpacity={0.8}
+                  reset={false}
+                  tiltAngleXInitial={0}
+                  tiltAngleYInitial={0}
+                  onEnter={e => {
+                    console.log(e)
+                  }}
+                >
+                  <p>CSS3</p>
+                </Tilt>
+              </li>
+              <li>
+                <Tilt
+                  className="skills__wrapper__inner__left__tilt"
+                  tiltReverse={true}
+                  glareEnable={true}
+                  glareMaxOpacity={0.8}
+                  reset={false}
+                  tiltAngleXInitial={0}
+                  tiltAngleYInitial={0}
+                  onEnter={e => {
+                    console.log(e)
+                  }}
+                >
+                  <p>JavaScript</p>
+                </Tilt>
+              </li>
+              <li>
+                <Tilt
+                  className="skills__wrapper__inner__left__tilt"
+                  tiltReverse={true}
+                  glareEnable={true}
+                  glareMaxOpacity={0.8}
+                  reset={false}
+                  tiltAngleXInitial={0}
+                  tiltAngleYInitial={0}
+                  onEnter={e => {
+                    console.log(e)
+                  }}
+                >
+                  <p>SASS</p>
+                </Tilt>
+              </li>
+              <li>
+                <Tilt
+                  className="skills__wrapper__inner__left__tilt"
+                  tiltReverse={true}
+                  glareEnable={true}
+                  glareMaxOpacity={0.8}
+                  reset={false}
+                  tiltAngleXInitial={0}
+                  tiltAngleYInitial={0}
+                  onEnter={e => {
+                    console.log(e)
+                  }}
+                >
+                  <p>PUG</p>
+                </Tilt>
+              </li>
+              <li>
+                <Tilt
+                  className="skills__wrapper__inner__left__tilt"
+                  tiltReverse={true}
+                  glareEnable={true}
+                  glareMaxOpacity={0.8}
+                  reset={false}
+                  tiltAngleXInitial={0}
+                  tiltAngleYInitial={0}
+                  onEnter={e => {
+                    console.log(e)
+                  }}
+                >
+                  <p>JQuery</p>
+                </Tilt>
+              </li>
+              <li>
+                <Tilt
+                  className="skills__wrapper__inner__left__tilt"
+                  tiltReverse={true}
+                  glareEnable={true}
+                  glareMaxOpacity={0.8}
+                  reset={false}
+                  tiltAngleXInitial={0}
+                  tiltAngleYInitial={0}
+                  onEnter={e => {
+                    console.log(e)
+                  }}
+                >
+                  <p>React.JS</p>
+                </Tilt>
+              </li>
+              <li>
+                <Tilt
+                  className="skills__wrapper__inner__left__tilt"
+                  tiltReverse={true}
+                  glareEnable={true}
+                  glareMaxOpacity={0.8}
+                  reset={false}
+                  tiltAngleXInitial={0}
+                  tiltAngleYInitial={0}
+                  onEnter={e => {
+                    console.log(e)
+                  }}
+                >
+                  <p>Gatsby.JS</p>
+                </Tilt>
+              </li>
+              <li>
+                <Tilt
+                  className="skills__wrapper__inner__left__tilt"
+                  tiltReverse={true}
+                  glareEnable={true}
+                  glareMaxOpacity={0.8}
+                  reset={false}
+                  tiltAngleXInitial={0}
+                  tiltAngleYInitial={0}
+                  onEnter={e => {
+                    console.log(e)
+                  }}
+                >
+                  <p>Node.JS</p>
+                </Tilt>
+              </li>
+              <li>
+                <Tilt
+                  className="skills__wrapper__inner__left__tilt"
+                  tiltReverse={true}
+                  glareEnable={true}
+                  glareMaxOpacity={0.8}
+                  reset={false}
+                  tiltAngleXInitial={0}
+                  tiltAngleYInitial={0}
+                  onEnter={e => {
+                    console.log(e)
+                  }}
+                >
+                  <p>Express.JS</p>
+                </Tilt>
+              </li>
+              <li>
+                <Tilt
+                  className="skills__wrapper__inner__left__tilt"
+                  tiltReverse={true}
+                  glareEnable={true}
+                  glareMaxOpacity={0.8}
+                  reset={false}
+                  tiltAngleXInitial={0}
+                  tiltAngleYInitial={0}
+                  onEnter={e => {
+                    console.log(e)
+                  }}
+                >
+                  <p>MongoDB</p>
+                </Tilt>
+              </li>
+              <li>
+                <Tilt
+                  className="skills__wrapper__inner__left__tilt"
+                  tiltReverse={true}
+                  glareEnable={true}
+                  glareMaxOpacity={0.8}
+                  reset={false}
+                  tiltAngleXInitial={0}
+                  tiltAngleYInitial={0}
+                  onEnter={e => {
+                    console.log(e)
+                  }}
+                >
+                  <p>WordPress</p>
+                </Tilt>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

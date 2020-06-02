@@ -26,3 +26,18 @@ $mainColour: #1bbc9b;
   line-height: 20px;
   letter-spacing: -0.1px;
 }
+@mixin titleFeature {
+  position: relative;
+  margin-bottom: 1.5rem;
+  padding-left: 0.15rem;
+  span {
+    color: $mainColour;
+  }
+  &::after,
+  &::before {
+    position: absolute;
+    font-size: 2rem;
+    color: $mainColour;
+    animation: pulse 2s ease 0s infinite;
+  }
+}
