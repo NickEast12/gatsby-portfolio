@@ -17,10 +17,8 @@ const projects = () => {
       <div className="projects__wrapper__inner">
         <h2>My Projects</h2>
         <div className="projects__wrapper__inner__cards">
-          <div
-            className="projects__wrapper__inner__cards__tilt "
-          >
-            <Link to="/">
+          <div className="projects__wrapper__inner__cards__tilt ">
+            <Link to="/projects/the-web-doctor">
               <Cards className="projects__wrapper__inner__cards__tilt__inner">
                 <h1 className="projects__wrapper__inner__cards__tilt__inner--left">
                   The Web Doctor
@@ -28,9 +26,7 @@ const projects = () => {
               </Cards>
             </Link>
           </div>
-          <div
-            className="projects__wrapper__inner__cards__tilt "
-          >
+          <div className="projects__wrapper__inner__cards__tilt ">
             <Link to="/">
               <Cards className="projects__wrapper__inner__cards__tilt__inner">
                 <h1 className="projects__wrapper__inner__cards__tilt__inner--right">
@@ -39,9 +35,7 @@ const projects = () => {
               </Cards>
             </Link>
           </div>
-          <div
-            className="projects__wrapper__inner__cards__tilt "
-          >
+          <div className="projects__wrapper__inner__cards__tilt ">
             <div to="/">
               <Cards className="projects__wrapper__inner__cards__tilt__inner">
                 <h1 className="projects__wrapper__inner__cards__tilt__inner--left">
@@ -50,9 +44,7 @@ const projects = () => {
               </Cards>
             </div>
           </div>
-          <div
-            className="projects__wrapper__inner__cards__tilt "
-          >
+          <div className="projects__wrapper__inner__cards__tilt ">
             <Link to="/">
               <Cards className="projects__wrapper__inner__cards__tilt__inner">
                 <h1 className="projects__wrapper__inner__cards__tilt__inner--right">
