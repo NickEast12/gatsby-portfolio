@@ -22,7 +22,14 @@ const AboutPage = () => (
               },
             },
             color: {
-              value: ["#ffffff"],
+              value: [
+                "#F83B3A",
+                "#EBDF64",
+                "#62DE6D",
+                "#DB55DD",
+                "#5353F1",
+                "#42E9F4",
+              ],
             },
             shape: {
               type: "circle",

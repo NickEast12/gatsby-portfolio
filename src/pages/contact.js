@@ -8,7 +8,7 @@ const SkillsPage = () => (
     <SEO title="Skills & Experience" />
     <div className="main__wrapper">
       <Particles
-        className="main__wrapper__background"
+        className="skills__wrapper__background"
         params={{
           particles: {
             number: {
