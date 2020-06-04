@@ -34,6 +34,7 @@
         width: 100%;
         font-size: 1.1rem;
         margin-bottom: 0.75rem;
+        border-radius: 0;
       }
       input::placeholder,
       textarea::placeholder {
@@ -42,6 +43,7 @@
         font-size: 1rem;
       }
       textarea {
+        border-radius: 0;
         padding: 0.65rem 0.5rem;
         border-bottom: solid $mainColour 1.5px;
         border-top: none;
