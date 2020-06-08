@@ -139,7 +139,7 @@ const SkillsPage = () => (
             className="contact__wrapper__inner__form"
             action="/"
             name="contact-form"
-            method="post"
+            method="POST"
             netlify-honeypot="bot-field"
             data-netlify="true"
           >
@@ -150,7 +150,7 @@ const SkillsPage = () => (
             <input type="text" placeholder="Subject" name="subject"></input>
             <textarea placeholder="Message" name="body"></textarea>
             <div className="contact__wrapper__inner__form__btn">
-              <button>Submit</button>
+              <button type="submit">Submit</button>
             </div>
           </form>
         </div>
