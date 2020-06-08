@@ -140,7 +140,6 @@ const SkillsPage = () => (
             action="/"
             name="contact-form"
             method="POST"
-            netlify-honeypot="bot-field"
             data-netlify="true"
           >
             <div className="contact__wrapper__inner__form__section">
