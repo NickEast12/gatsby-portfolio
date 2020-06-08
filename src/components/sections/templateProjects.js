@@ -1,5 +1,7 @@
 import React from "react"
 import Particles from "react-particles-js"
+import Tilt from "react-parallax-tilt"
+import { Link } from "gatsby"
 
 const TemplateProjects = props => {
   return (
@@ -127,39 +129,198 @@ const TemplateProjects = props => {
             }}
           />
           <h1>{props.ProjectName}</h1>
-          <p>small short desciprtion of the project</p>
+          <p>{props.ProjectIntro}</p>
           <div className="template__wrapper__inner__title__meta">
             <p>
-              Role: <span>Front End Development</span>
+              Role: <span>{props.ProjectInfo}</span>
             </p>
             <p>
-              Context: <span>Website Design</span>
+              Context: <span>{props.ProjectMeta}</span>
             </p>
           </div>
         </div>
         <div className="template__wrapper__inner__middle">
           <div className="template__wrapper__inner__middle__container">
-            <h2>The Project</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              scelerisque nulla eu ex sagittis eleifend. Phasellus eu lacus
-              odio. Etiam enim tellus, efficitur et ante accumsan, luctus cursus
-              risus.
-            </p>
-            <div className="template__wrapper__inner__middle__container__btn">
-              <button>Visit Website</button>
+            <div className="template__wrapper__inner__middle__container__wrapper">
+              <h2>The Project</h2>
+              <p>{props.ProjectDescription}</p>
+              <div className="template__wrapper__inner__middle__container__wrapper__btn">
+                <a href={props.LiveSite} target="_blank">
+                  <button>Visit Website</button>
+                </a>
+              </div>
             </div>
           </div>
+          <div className="template__wrapper__inner__middle__img">
+            <img src={props.Photo} />
+          </div>
           <div className="template__wrapper__inner__middle__container">
-            <h2>Technology</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              scelerisque nulla eu ex sagittis eleifend. Phasellus eu lacus
-              odio. Etiam enim tellus, efficitur et ante accumsan, luctus cursus
-              risus.
-            </p>
-            <div className="template__wrapper__inner__middle__container__btn">
-              <button>Visit Website</button>
+            <div className="template__wrapper__inner__middle__container__wrapper">
+              <h3>Web Technologies</h3>
+              <div className="template__wrapper__inner__middle__container__wrapper__boxes">
+                <h4>Front-End</h4>
+                <div className="template__wrapper__inner__middle__container__wrapper__boxes__lower">
+                  <Tilt
+                    className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
+                    tiltReverse={true}
+                    reset={false}
+                    tiltAngleXInitial={0}
+                    tiltAngleYInitial={0}
+                    onEnter={e => {
+                      console.log(e)
+                    }}
+                  >
+                    <p>{props.FrontSkills[0]}</p>
+                  </Tilt>
+                  <Tilt
+                    className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
+                    tiltReverse={true}
+                    reset={false}
+                    tiltAngleXInitial={0}
+                    tiltAngleYInitial={0}
+                    onEnter={e => {
+                      console.log(e)
+                    }}
+                  >
+                    <p>{props.FrontSkills[1]}</p>
+                  </Tilt>
+                  <Tilt
+                    className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
+                    tiltReverse={true}
+                    reset={false}
+                    tiltAngleXInitial={0}
+                    tiltAngleYInitial={0}
+                    onEnter={e => {
+                      console.log(e)
+                    }}
+                  >
+                    <p>{props.FrontSkills[2]}</p>
+                  </Tilt>
+                  <Tilt
+                    className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
+                    tiltReverse={true}
+                    reset={false}
+                    tiltAngleXInitial={0}
+                    tiltAngleYInitial={0}
+                    onEnter={e => {
+                      console.log(e)
+                    }}
+                  >
+                    <p>{props.FrontSkills[3]}</p>
+                  </Tilt>
+                </div>
+              </div>
+              <div className="template__wrapper__inner__middle__container__wrapper__boxes">
+                <h4>Back-End</h4>
+                <div className="template__wrapper__inner__middle__container__wrapper__boxes__lower">
+                  <Tilt
+                    className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
+                    tiltReverse={true}
+                    reset={false}
+                    tiltAngleXInitial={0}
+                    tiltAngleYInitial={0}
+                    onEnter={e => {
+                      console.log(e)
+                    }}
+                  >
+                    <p>{props.BackSkills[0]}</p>
+                  </Tilt>
+                  <Tilt
+                    className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
+                    tiltReverse={true}
+                    reset={false}
+                    tiltAngleXInitial={0}
+                    tiltAngleYInitial={0}
+                    onEnter={e => {
+                      console.log(e)
+                    }}
+                  >
+                    <p>{props.BackSkills[1]}</p>
+                  </Tilt>
+                  <Tilt
+                    className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
+                    tiltReverse={true}
+                    reset={false}
+                    tiltAngleXInitial={0}
+                    tiltAngleYInitial={0}
+                    onEnter={e => {
+                      console.log(e)
+                    }}
+                  >
+                    <p>{props.BackSkills[2]}</p>
+                  </Tilt>
+                  <Tilt
+                    className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
+                    tiltReverse={true}
+                    reset={false}
+                    tiltAngleXInitial={0}
+                    tiltAngleYInitial={0}
+                    onEnter={e => {
+                      console.log(e)
+                    }}
+                  >
+                    <p>{props.BackSkills[3]}</p>
+                  </Tilt>
+                </div>
+              </div>
+              <div className="template__wrapper__inner__middle__container__wrapper__boxes">
+                <h4>Tools</h4>
+                <div className="template__wrapper__inner__middle__container__wrapper__boxes__lower">
+                  <Tilt
+                    className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
+                    tiltReverse={true}
+                    reset={false}
+                    tiltAngleXInitial={0}
+                    tiltAngleYInitial={0}
+                    onEnter={e => {
+                      console.log(e)
+                    }}
+                  >
+                    <p>{props.Tools[0]}</p>
+                  </Tilt>
+                  <Tilt
+                    className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
+                    tiltReverse={true}
+                    reset={false}
+                    tiltAngleXInitial={0}
+                    tiltAngleYInitial={0}
+                    onEnter={e => {
+                      console.log(e)
+                    }}
+                  >
+                    <p>{props.Tools[1]}</p>
+                  </Tilt>
+                  <Tilt
+                    className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
+                    tiltReverse={true}
+                    reset={false}
+                    tiltAngleXInitial={0}
+                    tiltAngleYInitial={0}
+                    onEnter={e => {
+                      console.log(e)
+                    }}
+                  >
+                    <p>{props.Tools[2]}</p>
+                  </Tilt>
+                  <Tilt
+                    className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
+                    tiltReverse={true}
+                    reset={false}
+                    tiltAngleXInitial={0}
+                    tiltAngleYInitial={0}
+                    onEnter={e => {
+                      console.log(e)
+                    }}
+                  >
+                    <p>{props.Tools[3]}</p>
+                  </Tilt>
+                </div>
+              </div>
+              <div className="template__wrapper__inner__middle__container__wrapper__btn">
+                <a href={props.Github} target="_blank">
+                  <button>View Source</button>
+                </a>
+              </div>
             </div>
           </div>
         </div>

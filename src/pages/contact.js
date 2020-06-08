@@ -135,13 +135,20 @@ const SkillsPage = () => (
             large projects. However, if you have other request or question,
             don’t hesitate to contact me using below form either.
           </p>
-          <form className="contact__wrapper__inner__form">
+          <form
+            className="contact__wrapper__inner__form"
+            action="/"
+            name="contact-form"
+            method="post"
+            netlify-honeypot="bot-field"
+            data-netlify="true"
+          >
             <div className="contact__wrapper__inner__form__section">
-              <input type="text" placeholder="Name"></input>
-              <input type="text" placeholder="Email"></input>
+              <input type="text" placeholder="Name" name="name"></input>
+              <input type="text" placeholder="Email" name="email"></input>
             </div>
-            <input type="text" placeholder="Subject"></input>
-            <textarea placeholder="Message"></textarea>
+            <input type="text" placeholder="Subject" name="subject"></input>
+            <textarea placeholder="Message" name="body"></textarea>
             <div className="contact__wrapper__inner__form__btn">
               <button>Submit</button>
             </div>
