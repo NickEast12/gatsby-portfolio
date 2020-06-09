@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Particles from "react-particles-js"
 
-const SkillsPage = () => (
+const ContactPage = () => (
   <Layout>
     <SEO title="Skills & Experience" />
     <div className="main__wrapper">
@@ -137,7 +137,6 @@ const SkillsPage = () => (
           </p>
           <form
             className="contact__wrapper__inner__form"
-            action="/"
             name="contact-form"
             method="POST"
             data-netlify="true"
@@ -147,7 +146,7 @@ const SkillsPage = () => (
               <input type="text" placeholder="Email" name="email"></input>
             </div>
             <input type="text" placeholder="Subject" name="subject"></input>
-            <textarea placeholder="Message" name="body"></textarea>
+            <textarea placeholder="Message" name="message"></textarea>
             <div className="contact__wrapper__inner__form__btn">
               <button type="submit">Submit</button>
             </div>
@@ -158,4 +157,4 @@ const SkillsPage = () => (
   </Layout>
 )
 
-export default SkillsPage
+export default ContactPage
