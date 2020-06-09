@@ -137,48 +137,39 @@ const ContactPage = () => (
           </p>
           <form
             className="contact__wrapper__inner__form"
-            name="contact-form"
-            method="POST"
+            name="contact"
+            method="post"
             data-netlify="true"
+            data-netlify-honeypot="bot-field"
           >
             <div className="contact__wrapper__inner__form__section">
-              <input type="text" placeholder="Name" name="name"></input>
-              <input type="text" placeholder="Email" name="email"></input>
+              <input
+                type="text"
+                placeholder="Name"
+                name="name"
+                id="name"
+              ></input>
+              <input
+                type="text"
+                placeholder="Email"
+                name="email"
+                id="email"
+              ></input>
             </div>
-            <input type="text" placeholder="Subject" name="subject"></input>
-            <textarea placeholder="Message" name="message"></textarea>
+            <input
+              type="text"
+              placeholder="Subject"
+              name="title"
+              id="title"
+            ></input>
+            <textarea
+              placeholder="Message"
+              name="message"
+              id="message"
+            ></textarea>
             <div className="contact__wrapper__inner__form__btn">
               <button type="submit">Submit</button>
             </div>
-          </form>
-          <form name="contact" method="POST" data-netlify="true">
-            <p>
-              <label>
-                Your Name: <input type="text" name="name" />
-              </label>
-            </p>
-            <p>
-              <label>
-                Your Email: <input type="email" name="email" />
-              </label>
-            </p>
-            <p>
-              <label>
-                Your Role:{" "}
-                <select name="role[]" multiple>
-                  <option value="leader">Leader</option>
-                  <option value="follower">Follower</option>
-                </select>
-              </label>
-            </p>
-            <p>
-              <label>
-                Message: <textarea name="message"></textarea>
-              </label>
-            </p>
-            <p>
-              <button type="submit">Send</button>
-            </p>
           </form>
         </div>
       </div>
