@@ -1,0 +1,52 @@
+.failed__wrapper {
+  width: 100%;
+  height: 100%;
+  &__inner {
+    &__content {
+      position: absolute;
+      z-index: 6;
+      width: 100%;
+      top: calc(0% + 10.5rem);
+      &__container {
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+        h1 {
+          font-size: 3rem;
+        }
+        h2 {
+          font-size: 2.1rem;
+        }
+        &__btn {
+          width: 60%;
+          margin: 1.5rem auto;
+          button {
+            width: 100%;
+            @include mainButton;
+            @include fillButton;
+          }
+        }
+      }
+    }
+    &__img {
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+      }
+      &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: black;
+        opacity: 0.85;
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}

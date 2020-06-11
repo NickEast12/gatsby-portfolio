@@ -12,8 +12,9 @@ const projectMeta = "Website Redesign"
 const projectDescription = "lorem lorem lorem lorem lorem"
 const liveSite = "https://www.nick-east.com"
 const photo = `${TWBphoto}`
-const frontSkills = ["HTML5", "HTML5", "HTML5", "HTML5"]
-const backSkills = ["HTMl5", "HTML5", "HTML5", "HTML5"]
+const frontSkills = ["HTML5", "SCSS", "JavaScript", "Gatsby.js"]
+const isBackend = "Back-End"
+const backSkills = ["Netlify"]
 const tools = ["HTML5", "HTML5", "HTML5", "HTML5"]
 const code = "https://www.nick-east.com"
 
@@ -30,6 +31,7 @@ const TheWebDoctor = () => {
         LiveSite={liveSite}
         Photo={photo}
         FrontSkills={frontSkills}
+        IsBackend={isBackend}
         BackSkills={backSkills}
         Tools={tools}
         Github={code}

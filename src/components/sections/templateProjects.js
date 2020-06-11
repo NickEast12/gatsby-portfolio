@@ -4,6 +4,53 @@ import Tilt from "react-parallax-tilt"
 import { Link } from "gatsby"
 
 const TemplateProjects = props => {
+  const frontArray = props.FrontSkills
+  const frontArraySkills = frontArray.map(skills => (
+    <Tilt
+      className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
+      tiltReverse={true}
+      reset={false}
+      tiltAngleXInitial={0}
+      tiltAngleYInitial={0}
+      onEnter={e => {
+        console.log(e)
+      }}
+    >
+      <p>{skills}</p>
+    </Tilt>
+  ))
+
+  const backArray = props.BackSkills
+  const frontArrraySkills = backArray.map(skills => (
+    <Tilt
+      className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
+      tiltReverse={true}
+      reset={false}
+      tiltAngleXInitial={0}
+      tiltAngleYInitial={0}
+      onEnter={e => {
+        console.log(e)
+      }}
+    >
+      <p>{skills}</p>
+    </Tilt>
+  ))
+
+  const toolsArray = props.Tools
+  const toolsArraySkills = toolsArray.map(skills => (
+    <Tilt
+      className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
+      tiltReverse={true}
+      reset={false}
+      tiltAngleXInitial={0}
+      tiltAngleYInitial={0}
+      onEnter={e => {
+        console.log(e)
+      }}
+    >
+      <p>{skills}</p>
+    </Tilt>
+  ))
   return (
     <div className="template__wrappper">
       <div className="template__wrapper__inner">
@@ -160,160 +207,19 @@ const TemplateProjects = props => {
               <div className="template__wrapper__inner__middle__container__wrapper__boxes">
                 <h4>Front-End</h4>
                 <div className="template__wrapper__inner__middle__container__wrapper__boxes__lower">
-                  <Tilt
-                    className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
-                    tiltReverse={true}
-                    reset={false}
-                    tiltAngleXInitial={0}
-                    tiltAngleYInitial={0}
-                    onEnter={e => {
-                      console.log(e)
-                    }}
-                  >
-                    <p>{props.FrontSkills[0]}</p>
-                  </Tilt>
-                  <Tilt
-                    className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
-                    tiltReverse={true}
-                    reset={false}
-                    tiltAngleXInitial={0}
-                    tiltAngleYInitial={0}
-                    onEnter={e => {
-                      console.log(e)
-                    }}
-                  >
-                    <p>{props.FrontSkills[1]}</p>
-                  </Tilt>
-                  <Tilt
-                    className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
-                    tiltReverse={true}
-                    reset={false}
-                    tiltAngleXInitial={0}
-                    tiltAngleYInitial={0}
-                    onEnter={e => {
-                      console.log(e)
-                    }}
-                  >
-                    <p>{props.FrontSkills[2]}</p>
-                  </Tilt>
-                  <Tilt
-                    className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
-                    tiltReverse={true}
-                    reset={false}
-                    tiltAngleXInitial={0}
-                    tiltAngleYInitial={0}
-                    onEnter={e => {
-                      console.log(e)
-                    }}
-                  >
-                    <p>{props.FrontSkills[3]}</p>
-                  </Tilt>
+                  {frontArraySkills}
                 </div>
               </div>
               <div className="template__wrapper__inner__middle__container__wrapper__boxes">
                 <h4>Back-End</h4>
                 <div className="template__wrapper__inner__middle__container__wrapper__boxes__lower">
-                  <Tilt
-                    className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
-                    tiltReverse={true}
-                    reset={false}
-                    tiltAngleXInitial={0}
-                    tiltAngleYInitial={0}
-                    onEnter={e => {
-                      console.log(e)
-                    }}
-                  >
-                    <p>{props.BackSkills[0]}</p>
-                  </Tilt>
-                  <Tilt
-                    className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
-                    tiltReverse={true}
-                    reset={false}
-                    tiltAngleXInitial={0}
-                    tiltAngleYInitial={0}
-                    onEnter={e => {
-                      console.log(e)
-                    }}
-                  >
-                    <p>{props.BackSkills[1]}</p>
-                  </Tilt>
-                  <Tilt
-                    className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
-                    tiltReverse={true}
-                    reset={false}
-                    tiltAngleXInitial={0}
-                    tiltAngleYInitial={0}
-                    onEnter={e => {
-                      console.log(e)
-                    }}
-                  >
-                    <p>{props.BackSkills[2]}</p>
-                  </Tilt>
-                  <Tilt
-                    className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
-                    tiltReverse={true}
-                    reset={false}
-                    tiltAngleXInitial={0}
-                    tiltAngleYInitial={0}
-                    onEnter={e => {
-                      console.log(e)
-                    }}
-                  >
-                    <p>{props.BackSkills[3]}</p>
-                  </Tilt>
+                  {frontArrraySkills}
                 </div>
               </div>
               <div className="template__wrapper__inner__middle__container__wrapper__boxes">
                 <h4>Tools</h4>
                 <div className="template__wrapper__inner__middle__container__wrapper__boxes__lower">
-                  <Tilt
-                    className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
-                    tiltReverse={true}
-                    reset={false}
-                    tiltAngleXInitial={0}
-                    tiltAngleYInitial={0}
-                    onEnter={e => {
-                      console.log(e)
-                    }}
-                  >
-                    <p>{props.Tools[0]}</p>
-                  </Tilt>
-                  <Tilt
-                    className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
-                    tiltReverse={true}
-                    reset={false}
-                    tiltAngleXInitial={0}
-                    tiltAngleYInitial={0}
-                    onEnter={e => {
-                      console.log(e)
-                    }}
-                  >
-                    <p>{props.Tools[1]}</p>
-                  </Tilt>
-                  <Tilt
-                    className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
-                    tiltReverse={true}
-                    reset={false}
-                    tiltAngleXInitial={0}
-                    tiltAngleYInitial={0}
-                    onEnter={e => {
-                      console.log(e)
-                    }}
-                  >
-                    <p>{props.Tools[2]}</p>
-                  </Tilt>
-                  <Tilt
-                    className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
-                    tiltReverse={true}
-                    reset={false}
-                    tiltAngleXInitial={0}
-                    tiltAngleYInitial={0}
-                    onEnter={e => {
-                      console.log(e)
-                    }}
-                  >
-                    <p>{props.Tools[3]}</p>
-                  </Tilt>
+                  {toolsArraySkills}
                 </div>
               </div>
               <div className="template__wrapper__inner__middle__container__wrapper__btn">

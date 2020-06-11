@@ -13,7 +13,7 @@
     padding-top: 5rem;
     &__title {
       width: 80%;
-      margin: 2.5rem auto;
+      margin: 3.5rem auto;
       text-align: center;
       height: 15rem;
       h1 {
@@ -113,9 +113,12 @@
               &__tilt {
                 padding: 0;
                 text-align: center;
+                width: 100%;
+                margin-right: 2px;
               }
               p {
                 text-align: center;
+                width: 100%;
                 padding: 0;
                 padding: 0.5rem 0.25rem;
                 background: black;

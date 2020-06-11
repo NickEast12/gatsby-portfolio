@@ -1,13 +1,17 @@
-//* Components
-@import "./partials/_header";
 //* Vars and Keyframes
 @import "./partials/_keyframes";
 @import "./partials/_variables";
 @import "./partials/_universal";
+
+//* Components
+@import "./partials/_header";
+@import "./partials/_template";
+
 //* Pages
 @import "./partials/_homepage";
 @import "./partials/_about";
 @import "./partials/_projects";
 @import "./partials/_skills";
 @import "./partials/_contact";
-@import "./partials/_template";
+@import "./partials/_404";
+@import "./partials/_success";

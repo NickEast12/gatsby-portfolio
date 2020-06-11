@@ -1,73 +1,142 @@
-.main__wrapper {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  &__background {
+@media only screen and (min-width: 320px) {
+  .main__wrapper {
     width: 100%;
-    height: 100vh;
-    position: absolute;
-    z-index: -2;
-  }
-  &__content {
-    width: 75%;
-    margin: 0 auto;
-    padding-top: 6rem;
+    height: 100%;
     position: relative;
-    &__title {
-      h1 {
-        font-size: 2rem;
-        position: relative;
-        &::before {
-          content: "[";
-          position: absolute;
-          font-size: 2rem;
-          color: $mainColour;
-          left: -1rem;
-        }
-        &::after {
-          content: "]";
-          position: absolute;
-          font-size: 2rem;
-          color: $mainColour;
-          right: 4.5rem;
-        }
-        &::after,
-        &::before {
-          animation: pulse 2s ease 0s infinite;
-        }
-      }
-      p {
-        margin: 1.75rem 0;
-        font-weight: 300;
-      }
-    }
-    &__btn {
-      margin-top: 1.75rem;
-      width: 75%;
-      button {
-        width: 100%;
-        display: block;
-        margin: 1rem 0;
-        @include mainButton;
-        &:nth-child(1) {
-          @include outlineButton;
-        }
-        &:nth-child(2) {
-          @include fillButton;
-        }
-      }
-    }
-    &__meta {
+    &__background {
+      width: 100%;
+      height: 100vh;
       position: absolute;
-      bottom: -5rem;
-      p {
-        font-weight: 300;
-        font-size: 0.9rem;
-        margin-bottom: 5px;
-        span {
-          color: $mainColour;
-          font-weight: 700;
-          cursor: pointer;
+      z-index: -2;
+    }
+    &__content {
+      width: 75%;
+      margin: 0 auto;
+      padding-top: 6rem;
+      position: relative;
+      &__title {
+        h1 {
+          font-size: 2rem;
+          position: relative;
+          &::before {
+            content: "[";
+            position: absolute;
+            font-size: 2rem;
+            color: $mainColour;
+            left: -1rem;
+          }
+          &::after {
+            content: "]";
+            position: absolute;
+            font-size: 2rem;
+            color: $mainColour;
+            right: 4.5rem;
+          }
+          &::after,
+          &::before {
+            animation: pulse 2s ease 0s infinite;
+          }
+        }
+        p {
+          margin: 1.75rem 0;
+          font-weight: 300;
+        }
+      }
+      &__btn {
+        margin-top: 1.75rem;
+        width: 75%;
+        button {
+          width: 100%;
+          display: block;
+          margin: 1rem 0;
+          @include mainButton;
+          &:nth-child(1) {
+            @include outlineButton;
+          }
+          &:nth-child(2) {
+            @include fillButton;
+          }
+        }
+      }
+      &__meta {
+        position: absolute;
+        bottom: -5rem;
+        p {
+          font-weight: 300;
+          font-size: 0.9rem;
+          margin-bottom: 5px;
+          span {
+            color: $mainColour;
+            font-weight: 700;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 375px) {
+  .main__wrapper {
+    &__content {
+      padding-top: 6.5rem;
+      &__title {
+        h1 {
+          font-size: 2.25rem;
+          &::after,
+          &::before {
+            font-size: 2.25rem;
+          }
+          &::after {
+            right: 5.75rem;
+          }
+        }
+        p {
+          font-size: 1.1rem;
+        }
+      }
+      &__btn {
+        width: 80%;
+        button {
+          font-size: 0.9rem;
+        }
+      }
+      &__meta {
+        bottom: -9.5rem;
+        p {
+          font-size: 0.95rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 414px) {
+  .main__wrapper {
+    &__content {
+      padding-top: 6.5rem;
+      &__title {
+        h1 {
+          font-size: 2.5rem;
+          &::after,
+          &::before {
+            font-size: 2.5rem;
+          }
+          &::after {
+            right: 6.25rem;
+          }
+        }
+        p {
+          font-size: 1.2rem;
+        }
+      }
+      &__btn {
+        button {
+          font-size: 1rem;
+        }
+      }
+      &__meta {
+        bottom: -10.75rem;
+        p {
+          font-size: 1.1rem;
         }
       }
     }

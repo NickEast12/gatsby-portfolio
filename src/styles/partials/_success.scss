@@ -1,0 +1,45 @@
+.success__wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  &__background {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: -2;
+  }
+  &__inner {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 6.5rem;
+    text-align: center;
+
+    &__content {
+      svg {
+        width: 30%;
+        fill: $mainColour;
+        border: solid 2px $mainColour;
+        padding: 1rem;
+        border-radius: 4.5px;
+      }
+      h1 {
+        padding: 0.75rem 0 0.85rem 0;
+      }
+      p {
+        @include p;
+        padding-bottom: 1rem;
+      }
+      &__btn {
+        width: 60%;
+        margin: 0.5rem auto;
+        button {
+          width: 100%;
+          @include mainButton;
+          @include fillButton;
+        }
+      }
+    }
+  }
+}

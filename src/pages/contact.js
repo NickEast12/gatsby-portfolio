@@ -141,6 +141,7 @@ const ContactPage = () => (
             method="post"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
+            action="/success"
           >
             <input type="hidden" name="form-name" value="contact" />
             <div className="contact__wrapper__inner__form__section">
