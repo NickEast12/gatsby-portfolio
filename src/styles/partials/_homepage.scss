@@ -112,25 +112,24 @@
 @media only screen and (min-width: 414px) {
   .main__wrapper {
     &__content {
-      padding-top: 6.5rem;
+      padding-top: 8rem;
       &__title {
         h1 {
-          font-size: 2.5rem;
+          font-size: 2rem;
           &::after,
           &::before {
-            font-size: 2.5rem;
+            font-size: 2rem;
           }
           &::after {
-            right: 6.25rem;
+            right: 4.25rem;
           }
         }
         p {
-          font-size: 1.2rem;
+          font-size: 1rem;
         }
       }
       &__btn {
         button {
-          font-size: 1rem;
         }
       }
       &__meta {
