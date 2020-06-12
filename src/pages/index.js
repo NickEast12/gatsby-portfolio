@@ -130,12 +130,20 @@ const IndexPage = () => (
       />
       <div className="main__wrapper__content">
         <div className="main__wrapper__content__title">
-          <h1>Hi, my name is Nick and I'm a Front End Web Developer</h1>
+          <h1>
+            <span className="dec__left">H</span>i, my name is Nick and I'm a
+            Front End Web Develope
+            <span className="dec__right">r</span>
+          </h1>
           <p>I build website and apps using the latest web technologies</p>
         </div>
         <div className="main__wrapper__content__btn">
-          <button>My Projects!</button>
-          <button>Contact Me!</button>
+          <button>
+            <span>My Projects</span>
+          </button>
+          <button>
+            <span>Contact Me</span>
+          </button>
         </div>
         <div className="main__wrapper__content__meta">
           <p>

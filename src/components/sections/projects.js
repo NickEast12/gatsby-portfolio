@@ -15,7 +15,10 @@ const projects = () => {
   return (
     <div className="projects__wrapper" id="projectTag">
       <div className="projects__wrapper__inner">
-        <h2>My Projects</h2>
+        <h2>
+          <span className="dec__left">M</span>y Project
+          <span className="dec__right">s</span>
+        </h2>
         <div className="projects__wrapper__inner__cards">
           <div className="projects__wrapper__inner__cards__tilt ">
             <Link to="/projects/the-web-doctor">
@@ -27,9 +30,18 @@ const projects = () => {
             </Link>
           </div>
           <div className="projects__wrapper__inner__cards__tilt ">
-            <Link to="/">
+            <Link to="/projects/the-web-doctor">
               <Cards className="projects__wrapper__inner__cards__tilt__inner">
                 <h1 className="projects__wrapper__inner__cards__tilt__inner--right">
+                  Developer Portfolio
+                </h1>
+              </Cards>
+            </Link>
+          </div>
+          <div className="projects__wrapper__inner__cards__tilt ">
+            <Link to="/">
+              <Cards className="projects__wrapper__inner__cards__tilt__inner">
+                <h1 className="projects__wrapper__inner__cards__tilt__inner--left">
                   Vine Street Solutions
                 </h1>
               </Cards>
@@ -38,7 +50,7 @@ const projects = () => {
           <div className="projects__wrapper__inner__cards__tilt ">
             <div to="/">
               <Cards className="projects__wrapper__inner__cards__tilt__inner">
-                <h1 className="projects__wrapper__inner__cards__tilt__inner--left">
+                <h1 className="projects__wrapper__inner__cards__tilt__inner--right">
                   LashBase
                 </h1>
               </Cards>
@@ -47,7 +59,7 @@ const projects = () => {
           <div className="projects__wrapper__inner__cards__tilt ">
             <Link to="/">
               <Cards className="projects__wrapper__inner__cards__tilt__inner">
-                <h1 className="projects__wrapper__inner__cards__tilt__inner--right">
+                <h1 className="projects__wrapper__inner__cards__tilt__inner--left">
                   Obliterate
                 </h1>
               </Cards>

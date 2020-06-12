@@ -1,66 +1,69 @@
-.projects__container {
-  width: 100%;
-  height: 100%;
-  &__background {
-    position: absolute;
+@media only screen and (min-width: 320px) {
+  .projects__container {
     width: 100%;
     height: 100%;
-    left: 0;
-    top: 0;
-    z-index: -5;
+    &__background {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: -5;
+    }
   }
-}
 
-.projects__wrapper {
-  height: 100%;
-  padding: 1rem 0;
-  &__inner {
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 5rem;
-    h2 {
-      font-size: 2rem;
-      position: relative;
-      margin-bottom: 1.5rem;
-      padding-left: 0.15rem;
-      &::after,
-      &::before {
-        position: absolute;
+  .projects__wrapper {
+    height: 100%;
+    padding: 1rem 0;
+    &__inner {
+      width: 80%;
+      margin: 0 auto;
+      padding-top: 5rem;
+      h2 {
         font-size: 2rem;
-        color: $mainColour;
-        animation: pulse 2s ease 0s infinite;
+        position: relative;
+        margin-bottom: 1.5rem;
+        padding-left: 0.15rem;
       }
-      &::after {
-        content: "]";
-        right: 4.2rem;
-      }
-      &::before {
-        content: "[";
-        left: -0.75rem;
+      &__cards {
+        margin-top: 2.5rem;
+        &__tilt {
+          background: $mainColour;
+          margin-bottom: 4.5rem;
+          border: solid $mainColour 4px;
+
+          &__inner {
+            width: 100%;
+            height: 12rem;
+            position: relative;
+            &--left {
+              left: 0.1rem;
+            }
+            &--right {
+              right: 0.1rem;
+            }
+            h1 {
+              position: absolute;
+              color: #fff;
+              bottom: -2.5rem;
+              font-size: 1.2rem;
+            }
+          }
+        }
       }
     }
-    &__cards {
-      margin-top: 2.5rem;
-      &__tilt {
-        background: $mainColour;
-        margin-bottom: 4.5rem;
-        border: solid $mainColour 4px;
-
-        &__inner {
-          width: 100%;
-          height: 12rem;
-          position: relative;
-          &--left {
-            left: 1rem;
-          }
-          &--right {
-            right: 1rem;
-          }
-          h1 {
-            position: absolute;
-            color: #fff;
-            bottom: 0;
-            font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 375px) {
+  .projects__wrapper {
+    &__inner {
+      h2 {
+        font-size: 2.2rem;
+      }
+      &__cards {
+        &__tilt {
+          &__inner {
+            height: 14rem;
           }
         }
       }

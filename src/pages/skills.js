@@ -131,7 +131,9 @@ const SkillsPage = () => (
       <div className="skills__wrapper">
         <div className="skills__wrapper__inner">
           <h2>
-            Skills <span>&amp;</span> Experience
+            <span className="dec__left">S</span>kills{" "}
+            <span className="skills__wrapper__inner__span">&amp;</span>{" "}
+            Experienc<span className="dec__right">e</span>
           </h2>
           <div className="skills__wrapper__inner__right">
             <p>
@@ -153,7 +155,7 @@ const SkillsPage = () => (
             </p>
           </div>
           <div className="skills__wrapper__inner__left">
-            <h3>Web Technologies</h3>
+           
             <ul>
               <li>
                 <Tilt

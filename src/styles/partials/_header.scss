@@ -1,89 +1,122 @@
-.main__header__wrapper {
-  width: 100%;
-  position: fixed;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  background: none;
-  justify-content: space-between;
-  z-index: 100;
-  &__ham {
-    text-align: left;
-    margin: 1.25rem auto 0 2.5rem;
-    z-index: 101;
-  }
-  &__menu {
-    position: absolute;
-    width: 85%;
-    height: 28rem;
-    right: 0.75rem;
-    top: 0.5rem;
-    border-radius: 10px;
+@media only screen and (min-width: 320px) {
+  .main__header__wrapper {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background: none;
+    justify-content: space-between;
     z-index: 100;
-    &__inner {
-      clip-path: circle(100% at center);
-      width: 100%;
-      height: 100%;
-      position: relative;
-      text-align: right;
-      left: -1.25rem;
-      top: 0;
+    &__ham {
+      text-align: left;
+      margin: 1.25rem auto 0 2.5rem;
+      z-index: 101;
+      cursor: pointer;
+    }
+    &__menu {
+      position: absolute;
+      width: 85%;
+      height: 28rem;
+      right: 0.75rem;
+      top: 0.5rem;
       border-radius: 10px;
-      z-index: 5;
-
-      ul {
-        list-style: none;
+      z-index: 100;
+      &__inner {
+        clip-path: circle(100% at center);
+        width: 100%;
+        height: 100%;
         position: relative;
-        z-index: 4;
-        width: 85%;
-        margin: 0 auto;
-        padding-top: 5rem;
-        .traffic__lights {
-          top: 1.5rem;
-          right: 1rem;
-          opacity: 1;
-          position: absolute;
-          z-index: 6;
-          display: flex;
-          width: 4em;
-          height: 10px;
-          justify-content: space-between;
-          span {
-            width: 14.5px;
-            height: 14.5px;
-            border-radius: 100%;
-            background: red;
-            &:nth-child(1) {
-              background: rgb(252, 70, 69) !important;
-            }
-            &:nth-child(2) {
-              background: rgb(252, 179, 37) !important;
-            }
-            &:nth-child(3) {
-              background: rgb(42, 200, 51) !important;
+        text-align: right;
+        left: -1.25rem;
+        top: 0;
+        border-radius: 10px;
+        z-index: 5;
+
+        ul {
+          list-style: none;
+          position: relative;
+          z-index: 4;
+          width: 85%;
+          margin: 0 auto;
+          padding-top: 5rem;
+          .traffic__lights {
+            top: 1.5rem;
+            right: 1rem;
+            opacity: 1;
+            position: absolute;
+            z-index: 6;
+            display: flex;
+            width: 4em;
+            height: 10px;
+            justify-content: space-between;
+            span {
+              width: 14.5px;
+              height: 14.5px;
+              border-radius: 100%;
+              background: red;
+              &:nth-child(1) {
+                background: rgb(252, 70, 69) !important;
+              }
+              &:nth-child(2) {
+                background: rgb(252, 179, 37) !important;
+              }
+              &:nth-child(3) {
+                background: rgb(42, 200, 51) !important;
+              }
             }
           }
-        }
-        li {
-          .menu__items {
-            position: relative;
-            z-index: 5;
-            background: none;
-            text-align: left;
-            min-width: 5rem;
+          li {
+            .menu__items {
+              position: relative;
+              z-index: 5;
+              background: none;
+              text-align: left;
+              min-width: 5rem;
+              cursor: pointer;
 
-            h2 {
-              color: black;
-              font-size: 1.25rem;
-              margin-bottom: 0.35rem;
-            }
-            p {
-              color: black;
-              margin-bottom: 1.2rem;
+              h2 {
+                color: black;
+                font-size: 1.25rem;
+                margin-bottom: 0.35rem;
+              }
+              p {
+                color: black;
+                margin-bottom: 1.2rem;
+              }
             }
           }
         }
       }
+    }
+  }
+}
+@media only screen and (min-width: 375px) {
+  .main__header__wrapper {
+    &__menu {
+      width: 70%;
+      left: 3rem;
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  .main__header__wrapper {
+    &__ham {
+      margin: 3rem auto 0 6rem;
+    }
+    &__menu {
+      left: 5.5rem;
+      top: 2rem;
+      width: 40%;
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .main__header__wrapper {
+    &__menu {
+      left: 5.5rem;
+      top: 2rem;
+      width: 30%;
     }
   }
 }

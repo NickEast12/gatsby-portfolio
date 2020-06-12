@@ -5,7 +5,10 @@ const About = () => {
     <div className="about__wrapper" id="nameTag">
       <div className="about__wrapper__inner">
         <div className="about__wrapper__inner__left">
-          <h2>About Me</h2>
+          <h2>
+            <span className="dec__left">A</span>bout M
+            <span className="dec__right">e</span>
+          </h2>
           <p>
             Professionally connected with the web development industry and
             information technology for many years.

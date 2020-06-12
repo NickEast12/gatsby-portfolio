@@ -8,7 +8,7 @@ const ContactPage = () => (
     <SEO title="Skills & Experience" />
     <div className="main__wrapper">
       <Particles
-        className="skills__wrapper__background"
+        className="contact__wrapper__background"
         params={{
           particles: {
             number: {
@@ -129,7 +129,10 @@ const ContactPage = () => (
       />
       <div className="contact__wrapper">
         <div className="contact__wrapper__inner">
-          <h2>Contact Me!</h2>
+          <h2>
+            <span className="dec__left">C</span>ontact M
+            <span className="dec__right">e</span>
+          </h2>
           <p>
             I am interested in freelance opportunities – especially ambitious or
             large projects. However, if you have other request or question,

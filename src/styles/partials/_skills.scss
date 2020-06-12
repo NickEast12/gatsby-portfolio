@@ -1,77 +1,79 @@
-.skills__wrapper__background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
+@media only screen and (min-width: 320px) {
+  .skills__wrapper__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
 
-.skills__wrapper {
-  height: 100%;
-  padding: 2.5rem 0;
-  &__inner {
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 5rem;
-    h2 {
-      font-size: 2rem;
-      @include titleFeature;
-      &::after {
-        content: "]";
-        right: 4.75rem;
+  .skills__wrapper {
+    height: 100%;
+    padding: 2.5rem 0;
+    &__inner {
+      width: 80%;
+      margin: 0 auto;
+      padding-top: 5rem;
+      h2 {
+        font-size: 2rem;
       }
-      &::before {
-        content: "[";
-        left: -0.75rem;
+      &__span {
+        color: $mainColour;
       }
-    }
-    &__right {
-      p {
-        margin-bottom: 0.75rem;
-        font-weight: 300;
-        line-height: 20px;
-        letter-spacing: -0.1px;
-        margin: 0.65rem 0;
-        font-size: 1.01rem;
-        span {
-          color: $mainColour;
-          font-weight: 700;
-          text-transform: capitalize;
+      &__right {
+        p {
+          margin-bottom: 0.75rem;
+          font-weight: 300;
+          line-height: 20px;
+          letter-spacing: -0.1px;
+          margin: 0.65rem 0;
+          font-size: 1.01rem;
+          span {
+            color: $mainColour;
+            font-weight: 700;
+            text-transform: capitalize;
+          }
+        }
+      }
+      &__left {
+        padding-top: 1.5rem;
+
+        &__tilt {
+          width: 5rem;
+          text-align: center;
+          padding: 0.75rem 0;
+          background: linear-gradient(120deg, #13866e, $mainColour);
+        }
+        ul {
+          list-style: none;
+          display: flex;
+          justify-content: space-evenly;
+          flex-wrap: wrap;
+          li {
+            position: relative;
+            margin-bottom: 0.5rem;
+          }
         }
       }
     }
-    &__left {
-      padding-top: 1.5rem;
-      h3 {
-        font-size: 1.35rem;
-        @include titleFeature;
-        &::after,
-        &::before {
-          font-size: 1.35rem;
-        }
-        &::after {
-          content: "]";
-          right: 4.2rem;
-        }
-        &::before {
-          content: "[";
-          left: -0.45rem;
+  }
+}
+@media only screen and (min-width: 375px) {
+  .skills__wrapper {
+    &__inner {
+      h2 {
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+      }
+      &__right {
+        p {
+          font-size: 1.1rem;
         }
       }
-      &__tilt {
-        width: 5rem;
-        text-align: center;
-        padding: 0.75rem 0;
-        background: linear-gradient(120deg, #13866e, $mainColour);
-      }
-      ul {
-        list-style: none;
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        li {
-          position: relative;
-          margin-bottom: 0.5rem;
+      &__left {
+        margin-top: 1.5rem;
+        &__tilt {
+          width: 6rem;
         }
       }
     }
