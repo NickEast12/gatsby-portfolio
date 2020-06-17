@@ -155,7 +155,10 @@ const SkillsPage = () => (
             </p>
           </div>
           <div className="skills__wrapper__inner__left">
-           
+            <h3>
+              <span className="dec__left">W</span>eb Technologie
+              <span className="dec__right">s</span>
+            </h3>
             <ul>
               <li>
                 <Tilt

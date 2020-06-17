@@ -189,7 +189,10 @@ const TemplateProjects = props => {
         <div className="template__wrapper__inner__middle">
           <div className="template__wrapper__inner__middle__container">
             <div className="template__wrapper__inner__middle__container__wrapper">
-              <h2>The Project</h2>
+              <h2>
+                <span className="dec__left dec__left__alt">T</span>he Projec
+                <span className="dec__right dec__right__alt">t</span>
+              </h2>
               <p>{props.ProjectDescription}</p>
               <div className="template__wrapper__inner__middle__container__wrapper__btn">
                 <a href={props.LiveSite} target="_blank">
@@ -203,7 +206,12 @@ const TemplateProjects = props => {
           </div>
           <div className="template__wrapper__inner__middle__container">
             <div className="template__wrapper__inner__middle__container__wrapper">
-              <h3>Web Technologies</h3>
+              <h3>
+                {" "}
+                <span className="dec__left dec__left__alt">W</span>eb
+                Technologie
+                <span className="dec__right dec__right__alt">s</span>
+              </h3>
               <div className="template__wrapper__inner__middle__container__wrapper__boxes">
                 <h4>Front-End</h4>
                 <div className="template__wrapper__inner__middle__container__wrapper__boxes__lower">

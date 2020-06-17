@@ -5,6 +5,7 @@
     left: 0;
     height: 100%;
     width: 100%;
+    z-index: -2;
   }
 
   .skills__wrapper {
@@ -37,7 +38,11 @@
       }
       &__left {
         padding-top: 1.5rem;
-
+        h3 {
+          margin-bottom: 1.5rem;
+          margin-top: 1rem;
+          font-size: 1.75rem;
+        }
         &__tilt {
           width: 5rem;
           text-align: center;
@@ -71,9 +76,21 @@
         }
       }
       &__left {
-        margin-top: 1.5rem;
+        margin-top: 1.25rem;
         &__tilt {
           width: 6rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 414px) {
+  .skills__wrapper {
+    &__inner {
+      &__left {
+        margin-top: 1.25rem;
+        &__tilt {
+          width: 6.45rem;
         }
       }
     }

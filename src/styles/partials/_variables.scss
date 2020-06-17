@@ -115,3 +115,7 @@ $mainColour: #1bbc9b;
 .dec__right:after {
   animation: pulse 2s ease 0s infinite;
 }
+.dec__left__alt::before,
+.dec__right__alt::after {
+  color: #fff;
+}
