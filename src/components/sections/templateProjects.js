@@ -9,6 +9,8 @@ const TemplateProjects = props => {
     <Tilt
       className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
       tiltReverse={true}
+      glareEnable={true}
+      glareMaxOpacity={0.8}
       reset={false}
       tiltAngleXInitial={0}
       tiltAngleYInitial={0}
