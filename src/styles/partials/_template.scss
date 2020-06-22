@@ -79,21 +79,15 @@
               &__lower {
                 display: flex;
                 width: 100%;
-                justify-content: space-evenly;
-                &__tilt {
-                  padding: 0;
-                  text-align: center;
-                  width: 100%;
-                  margin-right: 2px;
-                  position: relative;
-                  z-index: 5;
-                }
+                justify-content: space-between;
+                margin-right: -1px;
+
                 p {
+                  flex-grow: 1;
                   text-align: center;
-                  width: 100%;
-                  padding: 0;
                   padding: 0.5rem 0.25rem;
                   background: black;
+                  margin-right: 1px;
                 }
               }
             }
@@ -112,28 +106,84 @@
 }
 @media only screen and (min-width: 375px) {
   .template__background {
-    height: 30rem;
+    height: 50rem;
   }
   .template__wrapper {
     &__inner {
       &__title {
-        height: 18rem;
+        height: 22rem;
         h1 {
           font-size: 2.2rem;
         }
         p {
           font-size: 1.01rem;
+          margin-top: 1.25rem;
+        }
+        &__meta {
+          padding-top: 8rem;
         }
       }
       &__middle {
         &__container {
           p {
             margin: 2rem 0;
+            font-size: 1.05rem;
           }
           &__wrapper {
+            padding-top: 1rem;
+            h3 {
+              padding-bottom: 1.75rem;
+            }
             &__boxes {
+              &__lower {
+                p {
+                  margin-right: 2px;
+                }
+              }
               h4 {
                 font-size: 1.05rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 414px) {
+  .template__wrapper {
+    &__inner {
+      &__title {
+        height: 26.25rem;
+        &__meta {
+          padding-top: 12.5rem;
+        }
+      }
+      &__middle {
+        &__container {
+          padding: 2rem 0 3rem 0;
+          p {
+            margin: 2rem 0;
+            font-size: 1.05rem;
+          }
+
+          &__wrapper {
+            padding-top: 1rem;
+
+            h3 {
+              padding: 2rem 0;
+            }
+            &__btn {
+              margin-top: 3rem;
+            }
+            &__boxes {
+              &__lower {
+                p {
+                  margin-right: 4px;
+                }
+              }
+              h4 {
+                font-size: 1.15rem;
               }
             }
           }

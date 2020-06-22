@@ -5,54 +5,13 @@ import { Link } from "gatsby"
 
 const TemplateProjects = props => {
   const frontArray = props.FrontSkills
-  const frontArraySkills = frontArray.map(skills => (
-    <Tilt
-      className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
-      tiltReverse={true}
-      glareEnable={true}
-      glareMaxOpacity={0.8}
-      reset={false}
-      tiltAngleXInitial={0}
-      tiltAngleYInitial={0}
-      onEnter={e => {
-        console.log(e)
-      }}
-    >
-      <p>{skills}</p>
-    </Tilt>
-  ))
+  const frontArraySkills = frontArray.map(skills => <p>{skills}</p>)
 
   const backArray = props.BackSkills
-  const frontArrraySkills = backArray.map(skills => (
-    <Tilt
-      className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
-      tiltReverse={true}
-      reset={false}
-      tiltAngleXInitial={0}
-      tiltAngleYInitial={0}
-      onEnter={e => {
-        console.log(e)
-      }}
-    >
-      <p>{skills}</p>
-    </Tilt>
-  ))
+  const frontArrraySkills = backArray.map(skills => <p>{skills}</p>)
 
   const toolsArray = props.Tools
-  const toolsArraySkills = toolsArray.map(skills => (
-    <Tilt
-      className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
-      tiltReverse={true}
-      reset={false}
-      tiltAngleXInitial={0}
-      tiltAngleYInitial={0}
-      onEnter={e => {
-        console.log(e)
-      }}
-    >
-      <p>{skills}</p>
-    </Tilt>
-  ))
+  const toolsArraySkills = toolsArray.map(skills => <p>{skills}</p>)
   return (
     <div className="template__wrappper">
       <div className="template__wrapper__inner">
@@ -246,3 +205,14 @@ const TemplateProjects = props => {
 }
 
 export default TemplateProjects
+//   <Tilt
+// className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
+// tiltReverse={true}
+// glareEnable={true}
+// glareMaxOpacity={0.8}
+// reset={false}
+// tiltAngleXInitial={0}
+// tiltAngleYInitial={0}
+// onEnter={e => {
+//   console.log(e)
+// }}
