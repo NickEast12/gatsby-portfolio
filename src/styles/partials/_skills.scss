@@ -3,7 +3,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     z-index: -2;
   }
@@ -45,6 +45,7 @@
         }
         &__tilt {
           width: 5rem;
+
           text-align: center;
           padding: 0.75rem 0;
           background: linear-gradient(120deg, #13866e, $mainColour);
@@ -93,6 +94,78 @@
           width: 6.45rem;
         }
       }
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  .skills__wrapper {
+    &__inner {
+      width: 75%;
+      margin-top: 2.5rem;
+      &__right {
+        p {
+          font-size: 1.1rem;
+          margin-top: 1rem;
+        }
+      }
+      &__left {
+        margin-top: 1.25rem;
+        &__tilt {
+          width: 100%;
+          padding: 1rem;
+        }
+        ul {
+          list-style: none;
+          display: flex;
+          justify-content: space-between;
+
+          li {
+            position: relative;
+            margin-bottom: 0.5rem;
+            flex-grow: 2;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .skills__wrapper {
+    &__inner {
+      width: 80%;
+    }
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .skills__wrapper {
+    &__inner {
+      width: 85%;
+      padding-top: 7.5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 5%;
+      &__left {
+        margin-top: -1rem;
+        padding-top: 0;
+        h3 {
+          font-size: 2.2rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .skills__wrapper {
+    &__inner {
+      width: 87%;
+    }
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .skills__wrapper {
+    &__inner {
+      width: 89%;
     }
   }
 }

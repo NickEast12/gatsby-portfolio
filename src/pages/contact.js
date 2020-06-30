@@ -134,9 +134,9 @@ const ContactPage = () => (
             <span className="dec__right">e</span>
           </h2>
           <p>
-            I am interested in freelance opportunities – especially ambitious or
-            large projects. However, if you have other request or question,
-            don’t hesitate to contact me using below form either.
+            Currently looking for a Junior Front End Developer position but also
+            interested in freelance opportunities. If you do have any questions
+            just contact me using the form below.
           </p>
           <form
             className="contact__wrapper__inner__form"
@@ -153,12 +153,14 @@ const ContactPage = () => (
                 placeholder="Name"
                 name="name"
                 id="name"
+                required
               ></input>
               <input
                 type="text"
                 placeholder="Email"
                 name="email"
                 id="email"
+                required
               ></input>
             </div>
             <input
@@ -166,14 +168,18 @@ const ContactPage = () => (
               placeholder="Subject"
               name="title"
               id="title"
+              required
             ></input>
             <textarea
               placeholder="Message"
               name="message"
               id="message"
+              required
             ></textarea>
             <div className="contact__wrapper__inner__form__btn">
-              <button type="submit">Submit</button>
+              <button type="submit">
+                <span>Submit</span>
+              </button>
             </div>
           </form>
         </div>

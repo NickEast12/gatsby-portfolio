@@ -56,6 +56,13 @@
             p {
               @include p;
               margin: 1rem 0;
+              span {
+                display: block;
+                font-size: 1.2rem;
+                color: #000;
+                margin-bottom: 0.5rem;
+                font-weight: bold;
+              }
             }
             &__btn {
               width: 70%;
@@ -154,9 +161,9 @@
   .template__wrapper {
     &__inner {
       &__title {
-        height: 22rem;
+        height: 25rem;
         &__meta {
-          padding-top: 8rem;
+          padding-top: 10rem;
         }
       }
       &__middle {
@@ -187,6 +194,113 @@
               }
             }
           }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  .template__wrapper {
+    &__inner {
+      &__title {
+        height: 20rem;
+        padding-top: 2.5rem;
+        width: 50%;
+        &__meta {
+          padding-top: 6rem;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+      &__middle {
+        &__img {
+          width: 70%;
+          margin: 0 auto;
+          img {
+          }
+        }
+        &__container {
+          &__wrapper {
+            padding-top: 1rem;
+            width: 60%;
+            h3 {
+              padding: 2rem 0;
+            }
+            &__btn {
+              margin-top: 3rem;
+            }
+            &__boxes {
+              &__lower {
+                p {
+                  margin-right: 4px;
+                }
+              }
+              h4 {
+                font-size: 1.15rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .template__wrapper {
+    &__inner {
+      &__middle {
+        &__img {
+          width: 60%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .template__wrapper {
+    &__inner {
+      &__title {
+        height: 22.5rem;
+        margin-top: 0;
+        p {
+          width: 70%;
+          margin: 1.5rem auto;
+        }
+        &__meta {
+          padding-top: 6.5rem;
+        }
+      }
+      &__middle {
+        display: grid;
+        grid-template-columns: 1fr 40% 1fr;
+        &__container {
+          padding: 0;
+          &__wrapper {
+            width: 80%;
+            h3,
+            h2 {
+              padding: 2rem 0 0 0;
+            }
+            &__btn {
+              margin-top: 1.5rem;
+              margin-bottom: 2rem;
+            }
+            &__boxes {
+              padding: 0.5rem 0 0 0;
+              &__lower {
+                padding: 0;
+                p {
+                  margin-top: 0.95rem;
+                  margin-bottom: 0.95rem;
+                }
+              }
+            }
+          }
+        }
+        &__img {
+          width: 90%;
+          padding: 3rem 0;
         }
       }
     }

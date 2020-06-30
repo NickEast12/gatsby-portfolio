@@ -6,17 +6,21 @@ import TemplateProjects from "../../components/sections/templateProjects"
 //* Template variables
 import TWBphoto from "../../images/lb_mockup.png"
 const projectName = "LashBase"
-const projectIntro = "lorem lorem lorem lorems"
-const projectInfo = "Front End Developer"
+const projectIntro =
+  "LashBase is the online application that allows users to find, book and review eyelash technicians in their area."
+const projectInfo = "Full Stack Developer"
 const projectMeta = "App Development"
-const projectDescription = "lorem lorem lorem lorem lorem"
-const liveSite = "https://www.nick-east.com"
+const projectAim =
+  "To build a full-stack application with a MongoDB database tapped into a Node.JS backend.  "
+const projectDescription =
+  "LashBase allowed users to sign up and browse for local eyelash technicians in their area. They can make a booking and then review the service out of 5 stars after. Sellers can edit their online profile and post photos and treatments that are available. "
+const liveSite = "https://lashbase.herokuapp.com/"
 const photo = `${TWBphoto}`
 const frontSkills = ["PUG", "SCSS", "JavaScript"]
 const isBackend = "Back-End"
 const backSkills = ["Express.JS", "Node.JS", "MongoDB"]
 const tools = ["Webpack", "GoogleAPI", "NPM"]
-const code = "https://www.nick-east.com"
+const code = "https://github.com/NickEast12/Lash-Base"
 
 const TheWebDoctor = () => {
   return (
@@ -27,6 +31,7 @@ const TheWebDoctor = () => {
         ProjectIntro={projectIntro}
         ProjectInfo={projectInfo}
         ProjectMeta={projectMeta}
+        ProjectAim={projectAim}
         ProjectDescription={projectDescription}
         LiveSite={liveSite}
         Photo={photo}

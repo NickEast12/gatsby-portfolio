@@ -48,6 +48,9 @@
               bottom: -2.5rem;
               font-size: 1.2rem;
             }
+            &__overlay {
+              display: none;
+            }
           }
         }
       }
@@ -64,6 +67,125 @@
         &__tilt {
           &__inner {
             height: 14rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  .projects__wrapper {
+    &__inner {
+      width: 75%;
+      padding-top: 7.5rem;
+
+      &__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2.5%;
+        &__tilt {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .projects__wrapper {
+    &__inner {
+      width: 80%;
+      padding-top: 7.5rem;
+
+      &__cards {
+        &__tilt {
+          margin-bottom: 3rem;
+          &__inner {
+            height: 14rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .projects__wrapper {
+    &__inner {
+      width: 85%;
+      padding-top: 7.5rem;
+
+      &__cards {
+        grid-template-columns: 1fr 1fr 1fr;
+        &__tilt {
+          margin-bottom: 3rem;
+          &__inner {
+            height: 14rem;
+            position: relative;
+            &:hover &__overlay {
+              opacity: 1;
+            }
+            &--left {
+              display: none;
+            }
+            &--right {
+              display: none;
+            }
+            &__overlay {
+              display: block;
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              background: $mainColour;
+              top: 0;
+              left: 0;
+              transition: all 0.5s linear;
+              opacity: 0;
+              &__content {
+                width: 80%;
+                margin: 0 auto;
+                text-align: center;
+                padding: 4.5rem 0;
+
+                h3 {
+                  font-size: 1.5rem;
+                }
+                &__btn {
+                  width: 80%;
+                  margin: 1rem auto;
+                  cursor: pointer;
+                  button {
+                    width: 100%;
+                    @include mainButton;
+                    border: #fff solid 2px;
+                    background: #fff;
+                    color: $mainColour;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .projects__wrapper {
+    &__inner {
+      width: 90%;
+      padding-top: 7.5rem;
+
+      &__cards {
+        grid-template-columns: 1fr 1fr 1fr;
+        &__tilt {
+          margin-bottom: 3rem;
+          &__inner {
+            height: 14rem;
+            &--left {
+              left: 0.1rem;
+            }
+            &--right {
+              left: 0.1rem;
+            }
           }
         }
       }

@@ -154,7 +154,13 @@ const TemplateProjects = props => {
                 <span className="dec__left dec__left__alt">T</span>he Projec
                 <span className="dec__right dec__right__alt">t</span>
               </h2>
-              <p>{props.ProjectDescription}</p>
+              <p>
+                <span>Aim </span> {props.ProjectAim}
+              </p>
+              <p>
+                <span>Description </span>
+                {props.ProjectDescription}
+              </p>
               <div className="template__wrapper__inner__middle__container__wrapper__btn">
                 <a href={props.LiveSite} target="_blank">
                   <button>Visit Website</button>

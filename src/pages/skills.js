@@ -130,24 +130,25 @@ const SkillsPage = () => (
       />
       <div className="skills__wrapper">
         <div className="skills__wrapper__inner">
-          <h2>
-            <span className="dec__left">S</span>kills{" "}
-            <span className="skills__wrapper__inner__span">&amp;</span>{" "}
-            Experienc<span className="dec__right">e</span>
-          </h2>
           <div className="skills__wrapper__inner__right">
+            <h2>
+              <span className="dec__left">S</span>kills{" "}
+              <span className="skills__wrapper__inner__span">&amp;</span>{" "}
+              Experienc<span className="dec__right">e</span>
+            </h2>
             <p>
-              The main area of my expertise is front end development (client
-              side of the web).
+              My main area of focus is on front end development, using HTML, CSS
+              and JavaScript to create custom websites. I also build small and
+              medium web applications using React.JS and Gatsby.
             </p>
             <p>
-              HTML, CSS, JS (TypeScript), building small and medium web apps
-              with Angular 2+, custom plugins, features, animations, and coding
-              interactive layouts.
+              Although I spend most of my time coding on the front end of the
+              web, I have experience using Node.JS and Express and several
+              headless CMS.
             </p>
             <p>
-              I have also full-stack developer experience with open source CMS
-              like (WordPress, Drupal, Magento, Keystone.js and other)
+              I'm currently getting myself stuck into Next.JS and GraphQL to
+              assist me in building a custom-built online store.
             </p>
             <p>
               Visit my <span>Linkedin</span> or <span>Github</span> or just get

@@ -2,6 +2,7 @@ import React from "react"
 import "../styles/main.scss"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Link } from "gatsby"
 import Particles from "react-particles-js"
 
 const IndexPage = () => (
@@ -138,12 +139,16 @@ const IndexPage = () => (
           <p>I build website and apps using the latest web technologies</p>
         </div>
         <div className="main__wrapper__content__btn">
-          <button>
-            <span>My Projects</span>
-          </button>
-          <button>
-            <span>Contact Me</span>
-          </button>
+          <Link to="/projects">
+            <button>
+              <span>My Projects</span>
+            </button>
+          </Link>
+          <Link to="/contact">
+            <button>
+              <span>Contact Me</span>
+            </button>
+          </Link>
         </div>
         <div className="main__wrapper__content__meta">
           <p>

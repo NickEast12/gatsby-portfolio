@@ -37,3 +37,61 @@
     }
   }
 }
+@media only screen and (min-width: 768px) {
+  .about__wrapper {
+    &__inner {
+      border: $testing;
+      width: 75%;
+      padding-top: 4.5rem;
+      &__left {
+        h2 {
+        }
+        p {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .about__wrapper {
+    &__inner {
+      width: 80%;
+      padding-top: 2.5rem;
+      &__left {
+        h2 {
+        }
+        p {
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .about__wrapper {
+    &__inner {
+      width: 85%;
+      padding-top: 2.5rem;
+      &__left {
+        h2 {
+        }
+        p {
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .about__wrapper {
+    &__inner {
+      width: 89%;
+      padding-top: 2.5rem;
+      &__left {
+        h2 {
+        }
+        p {
+        }
+      }
+    }
+  }
+}

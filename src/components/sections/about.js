@@ -10,18 +10,19 @@ const About = () => {
             <span className="dec__right">e</span>
           </h2>
           <p>
-            Professionally connected with the web development industry and
-            information technology for many years.
+            Currently trained as front end developer, I spend most of my time
+            hacking away using a React.JS, Gatsby and anything JavaScript, CSS
+            and HTML related. I also like to tinker with Node.JS and the Express
+            framework to build custom backends for my projects.
           </p>
           <p>
-            Well-organised person, problem solver, independent employee with
-            high attention to detail. Fan of MMA, outdoor activities, TV series
-            and, recently, English literature. A family person, father of two
-            fractious boys, therefore remote employment is preferred.
+            I'm a well-organised, ambitious problem solver with high attention
+            to detail. I love football, MMA, most types of music and anything
+            web or technology related.
           </p>
           <p>
-            Interested in the entire frontend spectrum and working on ambitious
-            projects with positive people.
+            Interested in working with a team of like-minded developers to help
+            develop my skills and reach my full potential.
           </p>
         </div>
         <div className="about__wrapper__inner__right"></div>
