@@ -9,7 +9,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-138434630-1        ",
+        trackingId: "UA-138434630-1",
         head: true,
       },
     },
@@ -18,6 +18,7 @@ module.exports = {
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-sitemap`,
+    "gatsby-plugin-robots-txt",
 
     {
       resolve: `gatsby-source-filesystem`,
