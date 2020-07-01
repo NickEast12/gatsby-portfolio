@@ -179,7 +179,7 @@ const Header = ({ siteTitle }) => {
                   }}
                 >
                   <h2>Home</h2>
-                  <p>Back to home </p>
+                  <p>Back to homepage </p>
                 </div>
               </AniLink>
               <AniLink swipe direction="up" to="/about-me">
@@ -191,7 +191,7 @@ const Header = ({ siteTitle }) => {
                   }}
                 >
                   <h2>About Me</h2>
-                  <p>Find out all about me</p>
+                  <p>A little about me</p>
                 </div>
               </AniLink>
             </li>
@@ -212,7 +212,7 @@ const Header = ({ siteTitle }) => {
               <AniLink swipe direction="up" to="/skills">
                 <div className="menu__items">
                   <h2>Skills</h2>
-                  <p>lorem lorem lorem112 lorem </p>
+                  <p>My current skill set </p>
                 </div>
               </AniLink>
             </li>
@@ -220,7 +220,7 @@ const Header = ({ siteTitle }) => {
               <AniLink swipe direction="down" to="/contact">
                 <div className="menu__items">
                   <h2>Contact</h2>
-                  <p>lorem lorem lorem112 lorem </p>
+                  <p>Get in contact with me</p>
                 </div>
               </AniLink>
             </li>

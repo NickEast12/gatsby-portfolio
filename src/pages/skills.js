@@ -151,8 +151,8 @@ const SkillsPage = () => (
               assist me in building a custom-built online store.
             </p>
             <p>
-              Visit my <span>Linkedin</span> or <span>Github</span> or just get
-              in <span> contact</span> with me!
+              Visit my <span>Github</span> for all links to my personal
+              projects.
             </p>
           </div>
           <div className="skills__wrapper__inner__left">

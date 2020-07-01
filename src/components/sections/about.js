@@ -9,7 +9,7 @@ const About = () => {
             <span className="dec__left">A</span>bout M
             <span className="dec__right">e</span>
           </h2>
-          <p>
+          <p className="about__wrapper__inner__left--bold">
             Currently trained as front end developer, I spend most of my time
             hacking away using a React.JS, Gatsby and anything JavaScript, CSS
             and HTML related. I also like to tinker with Node.JS and the Express

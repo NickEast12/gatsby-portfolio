@@ -7,6 +7,10 @@
       margin: 0 auto;
       &__left {
         padding-top: 5rem;
+        &--bold {
+          font-weight: 500 !important;
+          line-height: 22.5px !important;
+        }
         h2 {
           font-size: 2rem;
           position: relative;
