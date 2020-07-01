@@ -154,7 +154,11 @@ const IndexPage = () => (
           <p>
             Find me at{" "}
             <span className="main__wrapper__content__meta__github">
-              <a href="https://github.com/NickEast12" target="_blank">
+              <a
+                href="https://github.com/NickEast12"
+                target="_blank"
+                rel="noreferrer"
+              >
                 GitHub
               </a>
             </span>{" "}
@@ -163,6 +167,7 @@ const IndexPage = () => (
               <a
                 href="https://www.linkedin.com/in/nick-east/"
                 target="_blank"
+                rel="noreferrer"
               ></a>{" "}
               Linkedin
             </span>
