@@ -95,7 +95,7 @@ const projects = () => {
             </Link>
           </div>
           <div className="projects__wrapper__inner__cards__tilt ">
-            <div to="/projects/lashbase">
+            <Link to="/projects/lashbase">
               <LashCard className="projects__wrapper__inner__cards__tilt__inner">
                 <h1 className="projects__wrapper__inner__cards__tilt__inner--right">
                   LashBase
@@ -109,7 +109,7 @@ const projects = () => {
                   </div>
                 </div>
               </LashCard>
-            </div>
+            </Link>
           </div>
           <div className="projects__wrapper__inner__cards__tilt ">
             <Link to="/projects/obliterate">
