@@ -1,7 +1,5 @@
 import React from "react"
 import Particles from "react-particles-js"
-import Tilt from "react-parallax-tilt"
-import { Link } from "gatsby"
 
 const TemplateProjects = props => {
   const frontArray = props.FrontSkills

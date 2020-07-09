@@ -1,5 +1,4 @@
 import React from "react"
-import Tilt from "react-parallax-tilt"
 import { Link } from "gatsby"
 import styled from "styled-components"
 

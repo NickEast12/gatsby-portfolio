@@ -7,7 +7,6 @@ import { Link } from "gatsby"
 import Particles from "react-particles-js"
 
 //* import Gifs
-import Success from "../images/gifs/success.gif"
 import ThumbsUp from "../assets/thumbsup.svg"
 
 //* Random numbeer generator
@@ -148,7 +147,6 @@ const NotFoundPage = () => (
           </div>
         </div>
         <div className="success__wrapper__inner__img">
-          {/* <img src={Success} /> */}
         </div>
       </div>
     </div>
