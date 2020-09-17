@@ -3,13 +3,19 @@ import Particles from "react-particles-js"
 
 const TemplateProjects = props => {
   const frontArray = props.FrontSkills
-  const frontArraySkills = frontArray.map(skills => <p>{skills}</p>)
+  const frontArraySkills = frontArray.map(skills => (
+    <p key={skills}>{skills}</p>
+  ))
 
   const backArray = props.BackSkills
-  const frontArrraySkills = backArray.map(skills => <p>{skills}</p>)
+  const frontArrraySkills = backArray.map(skills => (
+    <p key={skills}>{skills}</p>
+  ))
 
   const toolsArray = props.Tools
-  const toolsArraySkills = toolsArray.map(skills => <p>{skills}</p>)
+  const toolsArraySkills = toolsArray.map(skills => (
+    <p key={skills}>{skills}</p>
+  ))
   return (
     <div className="template__wrappper">
       <div className="template__wrapper__inner">
@@ -19,21 +25,14 @@ const TemplateProjects = props => {
             params={{
               particles: {
                 number: {
-                  value: 250,
+                  value: 150,
                   density: {
-                    enable: true,
-                    value_area: 400,
+                    enable: false,
+                    value_area: 10,
                   },
                 },
                 color: {
-                  value: [
-                    "#F83B3A",
-                    "#EBDF64",
-                    "#62DE6D",
-                    "#DB55DD",
-                    "#5353F1",
-                    "#42E9F4",
-                  ],
+                  value: ["#FFFFFF"],
                 },
                 shape: {
                   type: "circle",
@@ -209,14 +208,3 @@ const TemplateProjects = props => {
 }
 
 export default TemplateProjects
-//   <Tilt
-// className="template__wrapper__inner__middle__container__wrapper__boxes__lower__tilt"
-// tiltReverse={true}
-// glareEnable={true}
-// glareMaxOpacity={0.8}
-// reset={false}
-// tiltAngleXInitial={0}
-// tiltAngleYInitial={0}
-// onEnter={e => {
-//   console.log(e)
-// }}

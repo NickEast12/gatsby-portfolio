@@ -21,6 +21,7 @@ const isBackend = "Back-End"
 const backSkills = ["Express.JS", "Node.JS"]
 const tools = ["Gulp", "EJS", "NPM", "SEO"]
 const code = "https://www.vinestreet.solutions"
+const id = " 1"
 const TheWebDoctor = () => {
   return (
     <Layout>
@@ -39,6 +40,7 @@ const TheWebDoctor = () => {
         BackSkills={backSkills}
         Tools={tools}
         Github={code}
+        key={id}
       />
     </Layout>
   )

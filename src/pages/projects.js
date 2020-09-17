@@ -14,21 +14,14 @@ const ProjectsPage = () => (
         params={{
           particles: {
             number: {
-              value: 250,
+              value: 150,
               density: {
-                enable: true,
-                value_area: 400,
+                enable: false,
+                value_area: 10,
               },
             },
             color: {
-              value: [
-                "#F83B3A",
-                "#EBDF64",
-                "#62DE6D",
-                "#DB55DD",
-                "#5353F1",
-                "#42E9F4",
-              ],
+              value: ["#FFFFFF"],
             },
             shape: {
               type: "circle",
@@ -129,7 +122,6 @@ const ProjectsPage = () => (
           retina_detect: true,
         }}
       />
-       
 
       <Projects />
     </div>
